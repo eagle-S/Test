@@ -1,0 +1,210 @@
+http://www.xuebuyuan.com/861103.html
+http://www.go-gddq.com/html/s696/2012-05/992995.htm
+http://blog.csdn.net/huangyabin001/article/details/28434989
+
+Android Framework中修改鼠标按键功能
+2013年09月06日 ⁄ 综合 ⁄ 共 4269字	⁄ 字号 小 中 大 ⁄ 评论关闭
+
+    这是实际工作中遇到问题：要求可以在设置中修改鼠标上的Left、Middle、Right Button对应的功能，功能有4种：左键点击，右键点击，菜单键、返回键。按键和功能的对应关系可以用系统属性来存储，Setting界面可以用RadioButton来完成，这些没什么可说的。下面要记录的是鼠标按键是如何更改功能的，在这之前先回顾一下基础知识——输入事件的处理流程。
+
+
+
+    首先从Kernel传递上来的键值由EventHub进行转码，之后由InputReader将其解释成各个事件，再由InputDispatcher分发。InputManager是InputReader和InputDispatcher线程的创建者，它只有一个职责，就是被WindowManagerService使用，从Native层获取按键事件。WindowManagerService则负责与窗口对接，分发按键消息。有很多文章对于按键事件处理讲的很详细，不赘述了，记录下源码位置，以后有时间慢慢看：
+
+
+
+事件分发给最前面的窗口:
+
+    /frameworks/base/services/java/com/android/server/WindowManagerService.java
+
+拦截消息的处理类：
+    /frameworks/base/policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
+
+按键事件定义：
+    /frameworks/base/core/java/android/view/KeyEvent.java
+
+Java层输入管理：
+    /frameworks/base/services/java/com/android/server/InputManager.Java
+
+native层输入管理：
+    /frameworks/base/libs/ui/InputManager.cpp
+
+事件读取线程：
+    /frameworks/base/libs/ui/InputReader.cpp
+
+事件分发线程：
+    /frameworks/base/libs/ui/InputDispatcher.cpp
+
+键码与键值转换:
+    /frameworks/base/libs/ui/EventHub.cpp
+
+     
+
+    分析过处理流程，可以发现要修改鼠标按键对应的功能，应该从InputReader入手——发生了什么事件，都是由 InputReader决定的，RawEvent只负责丢上来码值，InputDispatcher只负责把InputReader翻译出来的事件传达一下，我们让InputReader撒个谎，把左键事件说成右键事件，右键事件说成中间键事件，不就搞定了吗？
+
+
+
+    思维过程记录完毕，其实到这里问题已经找到解决方案了。接下来是策反InputReader的具体方法，上代码：
+
+
+
+int mMouseKeySettingSupport=1; //表示是否有设置鼠标键的功能，1有，0无。可以从属性中将其读取出来，读取过程不赘述，直接设定为1.
+static bool isPointerDown(int32_t buttonState) {
+
+	if(mMouseKeySettingSupport)
+	{
+		// 这个函数是判断是否有指针被按下，例如点击鼠标左键、右键，都属于点击事件。因为等一下AMOTION_EVENT_BUTTON_TERTIARY要作为Menu键，所以取消其作为点击使用。
+		return buttonState & (AMOTION_EVENT_BUTTON_PRIMARY | AMOTION_EVENT_BUTTON_SECONDARY);
+	}
+	else
+	{
+		return buttonState &
+			(AMOTION_EVENT_BUTTON_PRIMARY | AMOTION_EVENT_BUTTON_SECONDARY
+			| AMOTION_EVENT_BUTTON_TERTIARY);
+	}
+}
+
+static void synthesizeButtonKeys(InputReaderContext* context, int32_t action,
+	nsecs_t when, int32_t deviceId, uint32_t source,
+	uint32_t policyFlags, int32_t lastButtonState, int32_t currentButtonState) {
+
+	synthesizeButtonKey(context, action, when, deviceId, source, policyFlags,
+		lastButtonState, currentButtonState,
+		AMOTION_EVENT_BUTTON_BACK, AKEYCODE_BACK);
+	synthesizeButtonKey(context, action, when, deviceId, source, policyFlags,
+		lastButtonState, currentButtonState,
+		AMOTION_EVENT_BUTTON_FORWARD, AKEYCODE_FORWARD);
+
+	//支持菜单键
+	if(mMouseKeySettingSupport)
+	{
+		synthesizeButtonKey(context, action, when, deviceId, source, policyFlags,
+			lastButtonState, currentButtonState,
+			AMOTION_EVENT_BUTTON_TERTIARY, AKEYCODE_MENU);
+	}
+
+}
+
+//以下是按键映射函数，用于读取系统属性获取按键对应功能
+enum
+{
+	MOUSE_BTN_LEFT =0,
+	MOUSE_BTN_MIDDLE,
+	MOUSE_BTN_RIGHT,
+	MOUSE_BTN_COUNT
+};
+enum
+{
+	MOUSE_KEY_CLICK = 0,
+	MOUSE_KEY_MENU,
+	MOUSE_KEY_BACK,
+	MOUSE_KEY_RIGHT,
+	MOUSE_KEY_NUM
+};
+uint32_t CursorButtonAccumulator::getButtonMapValue(uint32_t key) const
+{
+	if(key >= MOUSE_BTN_COUNT)
+	{
+	return 0;
+	}
+
+	const char *properties[] = {
+		"persist.sys.mouse.btn.left",
+		"persist.sys.mouse.btn.middle",
+		"persist.sys.mouse.btn.right"
+	};
+
+
+	const struct stMouseBtnFunc{
+		char propValue[16];
+		uint32_t func;
+	}functions[]={
+		{"click", AMOTION_EVENT_BUTTON_PRIMARY},
+		{"menu", AMOTION_EVENT_BUTTON_TERTIARY},
+		{"back", AMOTION_EVENT_BUTTON_BACK},
+		{"right", AMOTION_EVENT_BUTTON_SECONDARY}
+	};
+
+
+	uint32_t defaultFunc[]={
+		AMOTION_EVENT_BUTTON_PRIMARY, 
+		AMOTION_EVENT_BUTTON_TERTIARY, 
+		AMOTION_EVENT_BUTTON_BACK};
+
+
+	const char* UNKONW_KEYVALUE="unknow";
+
+
+	char *propValue=new char[16];
+	property_get(properties[key], propValue,UNKONW_KEYVALUE);
+
+
+
+	if(strcmp(propValue,UNKONW_KEYVALUE)!=0)
+	{
+		for(int i=0; i<MOUSE_KEY_NUM;i++)
+		{
+			if(strcmp(propValue,functions[i].propValue)==0)
+			{
+				return functions[i].func;
+			}
+		}
+	}
+
+
+	return defaultFunc[key];
+}
+
+//偷梁换柱，按键对应的键值用getButtonMapValue获取
+
+uint32_t CursorButtonAccumulator::getButtonState() const {
+	uint32_t result = 0;
+	if (mBtnLeft) {
+		if(mMouseKeySettingSupport)
+		{
+			result |= getButtonMapValue(MOUSE_BTN_LEFT); //左键
+		}
+		else
+		{
+			result |= AMOTION_EVENT_BUTTON_PRIMARY; 
+		}
+		ALOGD("getButtonState. result=%d.", result);
+	}
+	if (mBtnOk1||mBtnOk2) {
+		result |= AMOTION_EVENT_BUTTON_PRIMARY;
+	}
+	if (mBtnRight) {
+		result |= AMOTION_EVENT_BUTTON_BACK;//result |= AMOTION_EVENT_BUTTON_SECONDARY;
+	}
+	if (mBtnMiddle) {
+
+		if(mMouseKeySettingSupport)
+		{
+			result |= getButtonMapValue(MOUSE_BTN_MIDDLE); //中间键
+		}
+		else
+		{
+			result |= AMOTION_EVENT_BUTTON_TERTIARY;
+		}
+		ALOGD("getButtonState. result=%d.", result);
+	}
+	if (mBtnBack || mBtnSide) {
+
+		if(mMouseKeySettingSupport)
+		{
+			result |= getButtonMapValue(MOUSE_BTN_RIGHT); //右键
+		}
+		else
+		{
+			result |= AMOTION_EVENT_BUTTON_BACK;
+		}
+
+	}
+	if (mBtnForward || mBtnExtra) {
+		result |= AMOTION_EVENT_BUTTON_FORWARD;
+	}
+	return result;
+}
+
+
+      如果对于framework中输入消息处理的流程足够熟悉，实现功能是个很简单的过程。在遇到问题的时候，如果没有头绪，不妨先把周边的知识都了解清楚再寻找解决方案。解决问题的能力远比解决问题本身重要得多。

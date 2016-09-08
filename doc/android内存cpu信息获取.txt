@@ -1,0 +1,7 @@
+获取某个进程pid内存信息：
+Debug.MemoryInfo[] memoryInfo = am.getProcessMemoryInfo(pids);
+memoryInfo[0].getTotalPss();
+
+获取设备剩余内存：
+am.getMemoryInfo(memoryInfo);
+memoryInfo.availMem;

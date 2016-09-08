@@ -1,0 +1,67 @@
+"meminfo"对应的Binder对象加到ServiceManager中：
+ActivityManagerService.setSystemProcess()函数ServiceManager.addService("meminfo", new MemBinder(this));
+
+
+ActivityManagerService内部静态类MemBinder实现：
+    static class MemBinder extends Binder {
+        ActivityManagerService mActivityManagerService;
+        MemBinder(ActivityManagerService activityManagerService) {
+            mActivityManagerService = activityManagerService;
+        }
+
+        @Override
+        protected void dump(FileDescriptor fd, PrintWriter pw, String[] args) {
+            if (mActivityManagerService.checkCallingPermission(android.Manifest.permission.DUMP)
+                    != PackageManager.PERMISSION_GRANTED) {
+                pw.println("Permission Denial: can't dump meminfo from from pid="
+                        + Binder.getCallingPid() + ", uid=" + Binder.getCallingUid()
+                        + " without permission " + android.Manifest.permission.DUMP);
+                return;
+            }
+
+            mActivityManagerService.dumpApplicationMemoryUsage(fd, pw, "  ", args, false, null);
+        }
+    }
+
+MemBinder.dump实际调用ActivityManagerService.dumpApplicationMemoryUsage函数
+	
+
+
+shell@X9000:/ $ dumpsys meminfo 1635
+Applications Memory Usage (kB):
+Uptime: 486630352 Realtime: 1119043144
+
+** MEMINFO in pid 1635 [com.android.phone] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap        0        0        0        0    10744     6895     2396
+  Dalvik Heap     5218     5164        0        0    13332     6667     6665
+ Dalvik Other     4428     4364        0        0
+        Stack      332      332        0        0
+       Ashmem        4        0        0        0
+    Other dev     1465     1460        4        0
+     .so mmap     1020      856        0        0
+    .apk mmap       32        0        0        0
+    .dex mmap      844       80      624        0
+   Other mmap        7        4        0        0
+      Unknown     4375     4372        0        0
+        TOTAL    17725    16632      628        0    24076    13562     9061
+
+ Objects
+               Views:       40         ViewRootImpl:        0
+         AppContexts:       19           Activities:        4
+              Assets:        5        AssetManagers:        5
+       Local Binders:       76        Proxy Binders:       41
+    Death Recipients:        8
+     OpenSSL Sockets:        0
+
+ SQL
+         MEMORY_USED:      925
+  PAGECACHE_OVERFLOW:      381          MALLOC_SIZE:       62
+
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4      212            471     1806/33/19  /data/data/com.android.providers.telephony/databases/telephony.db
+         4       20             83      523/24/10  /data/data/com.android.phone/databases/OppoCallSetting.db
+         4      180            480   5439/1128/25  /data/data/com.android.providers.telephony/databases/mmssms.db

@@ -1,0 +1,5 @@
+dumpsys 命令：
+源码目录：frameworks/native/cmds/dumpsys
+bin设备：/system/bin
+
+调用ServiceManager服务的listServices来查询系统注册的所有服务，并且通过checkService接口来获取服务的Binder远程代理对象，使用每个服务的dump函数来打印该服务的相关信息
