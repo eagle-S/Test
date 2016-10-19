@@ -1,0 +1,9 @@
+更新系统时间服务：
+NetworkTimeUpdateService
+
+代码路径：
+frameworks\base\services\core\java\com\android\server\NetworkTimeUpdateService.java
+
+调用：
+SystemServer.java 
+startOtherServices->networkTimeUpdaterF.systemRunning();

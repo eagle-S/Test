@@ -1,0 +1,65 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-03-25T15:16:35+08:00
+
+====== 05，Monkey命令 ======
+Created 星期五 25 三月 2016
+
+monkey --ignore-crashes --ignore-timeouts --kill-process-after-error --ignore-security-exceptions --throttle 1000 --pct-syskeys 0 -v -v -v -s 5 6000
+
+对系统模拟6000次随机用户事件，当应用程序出现意外停止，或者强行关闭,或无响应,或者认证错误时忽略继续操作，当应用程序发生错误时,停留在发生错误的状态；事件时延是1000ms,最高级别的日志，随机序列种子为5;
+
+单独应用： monkey -p com.android.contacts --monitor-native-crashes --pct-touch 30 -s 1 -v -v -v --throttle 500 100000
+
+一、Monkey 是什么？
+Monkey 就是SDK中附带的一个工具。
+二、Monkey 测试的目的？
+:该工具用于进行压力测试。 然后开发人员结合monkey 打印的日志 和系统打印的日志，结局测试中出现的问题。
+三、Monkey 测试的特点？
+Monkey 测试,所有的事件都是随机产生的，不带任何人的主观性。
+四、Monkey 命令详解
+1）.标准的monkey 命令
+[adb shell] monkey [options] <eventcount> , 例如：
+adb shell monkey -v 500    --------产生500次随机事件，作用在系统中所有activity（其实也不是所有的activity，而是包含  Intent.CATEGORY_LAUNCHER 或Intent.CATEGORY_MONKEY 的activity）。
+上面只是一个简单的例子，实际情况中通常会有很多的options 选项
+2）.四大类—— 常用选项 、 事件选项 、 约束选项 、 调试选项
+1：常用选项
+复制代码 代码如下:
+
+--help：打印帮助信息
+-v：指定打印信息的详细级别，一个 -v增加一个级别 ， 默认级别为 0 。
+
+2：事件选项
+复制代码 代码如下:
+
+-s：指定产生随机事件种子值，相同的种子值产生相同的事件序列。如： -s 200
+--throttle：每个事件结束后的间隔时间——降低系统的压力（如不指定，系统会尽快的发送事件序列）。如：--throttle 100
+--pct-touch：指定触摸事件的百分比，如：--pct-touch 5% ， 相关的还有以下option：
+--pct-motion <percent> （滑动事件）、 --pct-trackball <percent> （轨迹球事件） 、 --pct-nav <percent> （导航事件 up/down/left/right）、 --pct-majornav <percent> (主要导航事件 back key 、 menu key)、 --pct-syskeys <percent> (系统按键事件 Home 、Back 、startCall 、 endCall 、 volumeControl)、 --pct-appswitch <percent> （activity之间的切换）、 --pct-anyevent <percent>（任意事件）
+
+3：约束选项
+复制代码 代码如下:
+
+-p：指定有效的package（如不指定，则对系统中所有package有效），一个-p 对应一个有效package， 如：-p com.ckt -p com.ckt.asura；
+-c：activity必须至少包含一个指定的category，才能被启动，否则启动不了；
+
+4：调试选项
+复制代码 代码如下:
+
+--dbg-no-events：初始化启动的activity，但是不产生任何事件。
+--hprof：指定该项后在事件序列发送前后会立即生成分析报告  —— 一般建议指定该项。
+--ignore-crashes：忽略崩溃
+--ignore-timeouts：忽略超时
+--ignore-security-exceptions：忽略安全异常
+--kill-process-after-error：发生错误后直接杀掉进程
+--monitor-native-crashes：跟踪本地方法的崩溃问题
+--wait-dbg：知道连接了调试器才执行monkey测试。
+五、一个简单的monkey命令：
+复制代码 代码如下:
+adb shell monkey -p com.xy.android.junit -s 500 -v 10000
+但是，工作中为了保证测试数量的完整进行，我们一般不会在发生错误时立刻退出压力测试。monkey 测试命令如下
+复制代码 代码如下:
+adb shell monkey -p com.xy.android.junit -s 500 --ignore-crashes --ignore-timeouts --monitor-native-crashes -v -v 10000 > E:\monkey_log\java_monkey_log.txt
+六、monkey作用的包：com.ckt.android.junit
+产生时间序列的种子值：500
+忽略程序崩溃 、 忽略超时 、 监视本地程序崩溃 、 详细信息级别为2 ， 产生 10000个事件 。
