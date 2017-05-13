@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="180" android:drawable="@drawable/auto_load1" />
+    <item android:duration="180" android:drawable="@drawable/auto_load2" />
+    <item android:duration="180" android:drawable="@drawable/auto_load3" />
+    <item android:duration="180" android:drawable="@drawable/auto_load4" />
+    <item android:duration="180" android:drawable="@drawable/auto_load5" />
+    <item android:duration="180" android:drawable="@drawable/auto_load6" />
+    <item android:duration="180" android:drawable="@drawable/auto_load7" />
+    <item android:duration="180" android:drawable="@drawable/auto_load8" />
+</animation-list>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autoSkin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:id="@id/bg_top_4space"
+            android:layout_width="@dimen/auto_dimen2_26"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="@dimen/auto_dimen2_20"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/auto_dimen2_2"
+                android:src="@drawable/auto_ic_navi_tmc_top" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/auto_bg_navi_tmc_shadow"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/tmc_bar_container"
+                android:layout_width="@dimen/auto_dimen2_22"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/auto_bg_navi_tmc"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@id/bg_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/auto_dimen2_2"
+                    android:layout_marginRight="@dimen/auto_dimen2_2"
+                    android:layout_marginTop="@dimen/auto_dimen2_2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/auto_ic_navi_tmc_top" />
+
+                <!--<com.autonavi.navi.naviwidget.TmcBarView-->
+                    <!--android:id="@id/tmc_bar_view"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="@dimen/auto_dimen2_200"-->
+                    <!--android:layout_below="@id/bg_top"-->
+                    <!--android:layout_marginBottom="@dimen/auto_dimen2_2"-->
+                    <!--android:layout_marginLeft="@dimen/auto_dimen2_2"-->
+                    <!--android:layout_marginRight="@dimen/auto_dimen2_2" />-->
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/navi_tmc_cursor_container"
+            android:layout_width="@dimen/auto_dimen2_32"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/bg_top_4space"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@id/navi_tmc_cursor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/auto_ic_navi_tmc_icon"
+                android:translationY="@dimen/auto_dimen2_358"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/tmc_tag_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@id/tmc_bottom_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/auto_dimen2_28"
+            android:background="@drawable/auto_bg_tmc_block_day"
+            android:gravity="center"
+            android:minWidth="@dimen/auto_dimen2_80"
+            android:singleLine="true"
+            android:textSize="@dimen/auto_font_size_22"
+            android:translationY="0.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

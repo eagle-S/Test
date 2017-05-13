@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <com.autonavi.framework.fragmentcontainer.MapInteractiveRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+    <RelativeLayout
+        android:id="@+id/search_left_layout"
+        android:layout_width="250dip"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/shadow_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/auto_search_global_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/auto_bg_out_sytle_day"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/auto_dimen2_80"
+                    android:background="@drawable/auto_search_title_top_all_radius_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/auto_loading_left_bar_top"
+                        layout="@layout/search_back"
+                        android:layout_width="@dimen/auto_dimen2_76"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/auto_search_keyword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:ellipsize="middle"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/auto_dimen_15"
+                        android:paddingRight="@dimen/auto_dimen_15"
+                        android:singleLine="true"
+                        android:text="@string/auto_search_dest_title_edit_hint_text"
+                        android:textColor="@color/auto_color_212125"
+                        android:textSize="@dimen/auto_font_size_30" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/auto_dimen2_1"
+                    android:background="@color/auto_color_c0ccdc" />
+
+                <FrameLayout
+                    android:id="@+id/search_card_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.skyworthauto.navi.search.DestResultListView
+                        android:id="@+id/dest_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="@dimen/auto_dimen2_0.7"
+                        android:listSelector="@null" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_result_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/auto_dimen2_68"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/auto_bg_btn_navi_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/auto_dimen2_38"
+            android:paddingRight="@dimen/auto_dimen2_38">
+
+            <ImageView
+                android:id="@+id/search_result_navi_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/auto_dimen2_12"
+                android:src="@drawable/auto_route_start_navi_icon" />
+
+            <TextView
+                android:id="@+id/search_result_navi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去这里"
+                android:textColor="@color/auto_color_search_navi"
+                android:textSize="@dimen/auto_font_size_26" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/auto_navi_status_bar_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/auto_dimen2_21"
+        android:layout_marginTop="@dimen/auto_dimen2_21" />
+
+    <RelativeLayout
+        android:id="@+id/search_grandson_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/auto_dimen2_17"
+        android:layout_marginRight="@dimen/auto_dimen2_20"
+        android:layout_marginTop="@dimen/auto_dimen2_21"
+        android:layout_toRightOf="@id/search_left_layout"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

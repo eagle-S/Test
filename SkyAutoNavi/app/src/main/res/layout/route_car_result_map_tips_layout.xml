@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tips_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.autonavi.auto.view.AutoMapTipMention
+        android:id="@+id/car_prefer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <com.autonavi.auto.view.AutoMapTipMention
+        android:id="@+id/car_incident_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.autonavi.auto.view.AutoMapTipMention
+        android:id="@+id/car_avoidjam_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.autonavi.map.route.view.CarSceneTip
+        android:id="@+id/route_carscenetip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

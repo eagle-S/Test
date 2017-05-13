@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/input_method_picker_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/input_method_handwriting"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:background="@drawable/btn_pickup_textcolor_selector"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/input_method_handwriting_name"
+        android:textColor="#ffffffff"
+        android:textSize="23.0sp" />
+
+    <View
+        android:layout_width="@dimen/auto_input_dimen2_176"
+        android:layout_height="1.0dip"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff7188a2" />
+
+    <TextView
+        android:id="@id/input_method_pinyin"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:background="@drawable/btn_pickup_textcolor_selector"
+        android:gravity="center"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="5.0dip"
+        android:singleLine="true"
+        android:text="@string/input_method_simple_name"
+        android:textColor="#ffffffff"
+        android:textSize="23.0sp" />
+
+    <View
+        android:layout_width="@dimen/auto_input_dimen2_176"
+        android:layout_height="1.0dip"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff7188a2" />
+
+    <TextView
+        android:id="@id/input_method_fast_seek"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:background="@drawable/btn_pickup_textcolor_selector"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/input_method_fast_seak_name"
+        android:textColor="#ffffffff"
+        android:textSize="23.0sp" />
+</LinearLayout>

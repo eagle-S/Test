@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/auto_left_bar_textcolor_pressed" />
+    <item android:state_enabled="false" android:color="#ff555d6f" />
+    <item android:state_enabled="true" android:color="@color/auto_left_bar_textcolor_normal" />
+</selector>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="along_select_names">
+        <item>加油站</item>
+        <item>ATM</item>
+        <item>厕所</item>
+        <item>汽修点</item>
+    </string-array>
+    <string-array name="around_headers">
+        <item>加油站</item>
+        <item>长安4S店</item>
+        <item>美食</item>
+        <item>酒店</item>
+        <item>停车场</item>
+    </string-array>
+    <string-array name="around_time_pot">
+        <item>am</item>
+        <item>noon</item>
+        <item>pm</item>
+        <item>evening</item>
+        <item>night</item>
+    </string-array>
+    <string-array name="around_time_pot_name">
+        <item>上午</item>
+        <item>中午</item>
+        <item>下午</item>
+        <item>傍晚</item>
+        <item>夜晚</item>
+    </string-array>
+    <string-array name="auto_array_navi_identify_operate_error">
+        <item>抱歉，我不太确定您说了什么</item>
+        <item>对不起，我不太明白</item>
+        <item>对不起，我没听懂</item>
+    </string-array>
+    <string-array name="auto_array_navi_identify_seek_error">
+        <item>暂时找不到，叮一声后说出结束或者其他指令</item>
+    </string-array>
+    <string-array name="auto_array_navi_speech_help">
+        <item>您需要什么帮助？</item>
+        <item>我能为您做什么？</item>
+    </string-array>
+    <string-array name="dest_hot">
+        <item>加油站</item>
+        <item>停车场</item>
+        <item>卫生间</item>
+    </string-array>
+    <string-array name="error_audio_navi">
+        <item>播报没声音</item>
+        <item>播报时机不对</item>
+        <item>转弯播报错误</item>
+        <item>播报听不懂</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_check_foot_plan_error">
+        <item>方案绕路</item>
+        <item>道路不通</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_check_line_error_station">
+        <item>地图线路缺失</item>
+        <item>地图线路多余</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_check_plan_error">
+        <item>方案绕路</item>
+        <item>上下车站不合理</item>
+        <item>有更好的换乘方案</item>
+        <item>找不到公交路线</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_check_station_error">
+        <item>找不到车站</item>
+        <item>车站名称错误</item>
+        <item>车站位置错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_check_station_error_in_plan">
+        <item>车站名称错误</item>
+        <item>车站位置错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_check_station_plan_error">
+        <item>车站名称错误</item>
+        <item>车站位置错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_elec_item">
+        <item>电子眼缺失</item>
+        <item>电子眼位置错误</item>
+        <item>限速播报不准</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_eleceyes">
+        <item>电子眼缺失</item>
+        <item>电子眼位置错误</item>
+        <item>限速播报不准</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_fast_bus_route">
+        <item>换乘方案不合理</item>
+        <item>站点位置错误</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="error_fast_bus_route_hints">
+        <item>请说明换乘不合理的路段</item>
+        <item>请尽量详细描述您遇到的问题，这将对我们定位并解决问题有巨大帮助。</item>
+        <item>请尽量详细描述您遇到的问题，这将对我们定位并解决问题有巨大帮助。</item>
+    </string-array>
+    <string-array name="error_fast_locate">
+        <item>定位问题</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="error_fast_locate_hints">
+        <item>请详细描述您遇到的定位问题：无法定位？定位不准？在地图的位置长时间不变？还是定位到曾经去过的位置？您的描述将会帮我们准确的找到并解决问题。</item>
+        <item>请尽量详细描述您遇到的问题，这将对我们定位并解决问题有巨大帮助。</item>
+    </string-array>
+    <string-array name="error_fast_route">
+        <item>方案绕路</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="error_fast_route_hints">
+        <item>请说明规划不合理的路段</item>
+        <item>请详细描述您遇到的问题</item>
+    </string-array>
+    <string-array name="error_list_map_feedback">
+        <item>新增地点</item>
+        <item>定位不准</item>
+        <item>软件运行不稳定</item>
+        <item>改进建议</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_bus_line">
+        <item>线路错误</item>
+        <item>途经站错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_bus_line_radio_linechange">
+        <item>找不到该线路</item>
+        <item>线路改道</item>
+        <item>运营时间错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_bus_line_radio_stationerror">
+        <item>地图站点缺失</item>
+        <item>地图站点多余</item>
+        <item>车站顺序错误</item>
+        <item>车站位置错误</item>
+        <item>车站名称错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_indoor">
+        <item>该地点不存在</item>
+        <item>信息错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_location_poi">
+        <item>新增地点</item>
+        <item>定位不准</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_navi_bus">
+        <item>公交方案不合理</item>
+        <item>步行路线错误</item>
+        <item>车站错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_navi_drive">
+        <item>目的地位置有误</item>
+        <item>方案绕路</item>
+        <item>有不可通行道路</item>
+        <item>电子眼提示有误</item>
+        <item>限速提示有误</item>
+        <item>方案含有违规驾驶</item>
+        <item>语音播报问题</item>
+    </string-array>
+    <string-array name="error_type_navi_drive_new">
+        <item>目的地位置有误</item>
+        <item>方案绕路</item>
+        <item>有不可通行道路</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_navi_drive_plan">
+        <item>目的地位置有误</item>
+        <item>方案绕路</item>
+        <item>有不可通行道路</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_navi_foot">
+        <item>方案绕路</item>
+        <item>道路不通</item>
+        <item>目的地错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_navi_foot_new">
+        <item>目的地位置有误</item>
+        <item>方案绕路</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_offline_map">
+        <item>无法下载</item>
+        <item>地图无法使用</item>
+        <item>导航无法使用</item>
+        <item>存储异常</item>
+        <item>更新后异常</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_onekey">
+        <item>定位问题</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="error_type_poi">
+        <item>该地点不存在</item>
+        <item>地点位置错误</item>
+        <item>地点信息错误</item>
+        <item>地点范围错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_poi_add">
+        <item>新增商户、楼宇、公共设施</item>
+        <item>新增车站(公交、地铁)</item>
+        <item>新增线路(公交、地铁)</item>
+        <item>新增道路</item>
+    </string-array>
+    <string-array name="error_type_poi_road">
+        <item>道路名称错误</item>
+        <item>道路不存在</item>
+        <item>道路施工</item>
+        <item>道路改道</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_poi_road_check_process">
+        <item>建设中</item>
+        <item>已建成未开通</item>
+        <item>道路断路维护</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_station">
+        <item>车站错误</item>
+        <item>途经线路错误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="error_type_street_view">
+        <item>有车牌或人脸没有模糊处理</item>
+        <item>图像有误</item>
+        <item>道路有误</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="feedback_labels">
+        <item>定位不准</item>
+        <item>找不到地点</item>
+        <item>路线方案有误</item>
+        <item>软件不稳定</item>
+        <item>产品改进建议</item>
+    </string-array>
+    <array name="input_method_ids">
+        <item>@id/input_method_handwriting</item>
+        <item>@id/input_method_first_letter</item>
+        <item>@id/input_method_pinyin</item>
+        <item>@id/input_method_latin</item>
+    </array>
+    <string-array name="navi_speed_choice">
+        <item>默认</item>
+        <item>低速</item>
+        <item>中速</item>
+        <item>高速</item>
+    </string-array>
+    <string-array name="negative_values">
+        <item>否</item>
+        <item>不去</item>
+        <item>不</item>
+        <item>不行</item>
+        <item>不可以</item>
+        <item>不开始</item>
+        <item>不导航</item>
+        <item>不发起导航</item>
+        <item>不用</item>
+        <item>不发起</item>
+        <item>不用发起</item>
+        <item>不要</item>
+        <item>不要导航</item>
+        <item>不要发起</item>
+        <item>不要发起导航</item>
+        <item>不需要</item>
+        <item>别导航</item>
+        <item>别发起</item>
+        <item>别发起导航</item>
+    </string-array>
+    <string-array name="network_type">
+        <item>WIFI</item>
+        <item>2G</item>
+        <item>3G</item>
+        <item>4G</item>
+    </string-array>
+    <string-array name="poi_add_type">
+        <item>公司企业</item>
+        <item>交通设施</item>
+        <item>餐饮</item>
+        <item>生活</item>
+        <item>购物</item>
+        <item>医疗</item>
+        <item>住宿</item>
+        <item>公共设施</item>
+        <item>景点</item>
+        <item>住宅</item>
+        <item>政府机构</item>
+        <item>体育休闲</item>
+        <item>文化服务</item>
+        <item>汽车</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="positive_values">
+        <item>是</item>
+        <item>可以</item>
+        <item>行</item>
+        <item>好</item>
+        <item>好的</item>
+        <item>同意</item>
+        <item>OK</item>
+        <item>导航</item>
+        <item>发起导航</item>
+        <item>发起</item>
+        <item>要</item>
+        <item>开始导航</item>
+        <item>是的</item>
+        <item>要的</item>
+        <item>需要</item>
+        <item>开始</item>
+        <item>四</item>
+        <item>射</item>
+        <item>社</item>
+    </string-array>
+    <string-array name="remote_sync_button_text">
+        <item>@string/offline_remote_sync_data</item>
+        <item>@string/cancel</item>
+        <item>@string/offline_remote_sync_disconnect</item>
+        <item>@string/retry</item>
+    </string-array>
+    <string-array name="remote_sync_common_tips">
+        <item>@string/offline_remote_sync_close_wifi_info_1</item>
+        <item>@string/offline_remote_sync_ensure_wifi_info</item>
+        <item>@string/offline_remote_sync_close_wifi_info_2</item>
+        <item>@string/offline_remote_sync_ensure_wifi_info</item>
+    </string-array>
+    <string-array name="remote_sync_connecting_tips">
+        <item>@string/offline_remote_sync_connect_open_wifi_info</item>
+        <item>@string/offline_remote_sync_connecting</item>
+        <item>@string/offline_remote_sync_connect_success</item>
+        <item>@string/offline_remote_sync_connect_fail</item>
+    </string-array>
+    <array name="remote_sync_image_background">
+        <item>@drawable/remote_sync_wifi</item>
+        <item>@drawable/remote_sync_connecting</item>
+        <item>@drawable/remote_sync_connect_success</item>
+        <item>@drawable/remote_sync_connect_fail</item>
+    </array>
+    <string-array name="save_point_type">
+        <item>常用地址</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="search_from_type">
+        <item>默认搜索</item>
+        <item>添加收藏点</item>
+        <item>添加途经点</item>
+        <item>目的地</item>
+    </string-array>
+    <string-array name="spinner_filter_category">
+        <item>Activity</item>
+        <item>Fragment</item>
+        <item>逻辑代码</item>
+    </string-array>
+    <string-array name="spinner_filter_style">
+        <item>列表</item>
+        <item>柱状图</item>
+    </string-array>
+    <string-array name="spinner_filter_type">
+        <item>启动总时长</item>
+        <item>单项运行时长</item>
+    </string-array>
+    <string-array name="subwaylist_names">
+        <item>北京#110000</item>
+        <item>上海#310000</item>
+        <item>广州#440100</item>
+        <item>深圳#440300</item>
+        <item>长春#220100</item>
+        <item>成都#510100</item>
+        <item>重庆#500000</item>
+        <item>大连#210200</item>
+        <item>哈尔滨#230100</item>
+        <item>佛山#440600</item>
+        <item>杭州#330100</item>
+        <item>昆明#530100</item>
+        <item>南京#320100</item>
+        <item>沈阳#210100</item>
+        <item>苏州#320500</item>
+        <item>天津#120000</item>
+        <item>武汉#420100</item>
+        <item>西安#610100</item>
+        <item>香港#810000</item>
+        <item>郑州#410100</item>
+        <item>宁波#330200</item>
+        <item>长沙#430100</item>
+        <item>无锡#320200</item>
+    </string-array>
+    <string-array name="traffic_accident">
+        <item>故障车</item>
+        <item>障碍</item>
+        <item>车祸</item>
+    </string-array>
+    <string-array name="traffic_jam">
+        <item>畅通</item>
+        <item>缓慢</item>
+        <item>拥堵</item>
+        <item>不动</item>
+    </string-array>
+    <string-array name="traffic_mood">
+        <item>交通管制</item>
+        <item>道路关闭</item>
+    </string-array>
+    <string-array name="traffic_police">
+        <item>抓违章</item>
+        <item>查酒驾</item>
+    </string-array>
+    <array name="traffic_report_icons">
+        <item>@drawable/traffic_report_congestion</item>
+        <item>@drawable/traffic_report_trouble</item>
+        <item>@drawable/traffic_report_accident</item>
+        <item>@drawable/traffic_report_ponding</item>
+        <item>@drawable/traffic_report_police</item>
+        <item>@drawable/traffic_report_process</item>
+        <item>@drawable/traffic_report_closure</item>
+    </array>
+    <string-array name="traffic_report_items">
+        <item>@string/traffic_report_congestion</item>
+        <item>@string/traffic_report_trouble</item>
+        <item>@string/traffic_report_accident</item>
+        <item>@string/traffic_report_ponding</item>
+        <item>@string/traffic_report_police</item>
+        <item>@string/traffic_report_process</item>
+        <item>@string/traffic_report_closure</item>
+    </string-array>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.ime.widget.SoftKeyboard android:orientation="vertical" android:id="@id/soft_keyboard_simple" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:com.autonavi.minimap.ime="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/SoftKeyRow">
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="1" com.autonavi.minimap.ime:keyCode="8" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="2" com.autonavi.minimap.ime:keyCode="9" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="3" com.autonavi.minimap.ime:keyCode="10" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="4" com.autonavi.minimap.ime:keyCode="11" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="5" com.autonavi.minimap.ime:keyCode="12" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="6" com.autonavi.minimap.ime:keyCode="13" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="7" com.autonavi.minimap.ime:keyCode="14" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="8" com.autonavi.minimap.ime:keyCode="15" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="9" com.autonavi.minimap.ime:keyCode="16" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="0" com.autonavi.minimap.ime:keyCode="7" style="@style/SoftKey.Button" />
+    </LinearLayout>
+    <LinearLayout style="@style/SoftKeyRow">
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="\@" com.autonavi.minimap.ime:keyCode="-64" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="\#" com.autonavi.minimap.ime:keyCode="-35" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="$" com.autonavi.minimap.ime:keyCode="-36" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="%" com.autonavi.minimap.ime:keyCode="-37" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="*" com.autonavi.minimap.ime:keyCode="-42" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="-" com.autonavi.minimap.ime:keyCode="69" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="/" com.autonavi.minimap.ime:keyCode="76" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="(" com.autonavi.minimap.ime:keyCode="-40" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text=")" com.autonavi.minimap.ime:keyCode="-41" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="@string/back_to_latin_keyboard" com.autonavi.minimap.ime:keyCode="@integer/keycode_toggle_symbol" style="@style/SoftKey.Button" />
+    </LinearLayout>
+    <LinearLayout style="@style/SoftKeyRow">
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="!" com.autonavi.minimap.ime:keyCode="-33" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="'" com.autonavi.minimap.ime:keyCode="75" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text=":" com.autonavi.minimap.ime:keyCode="-58" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text=";" com.autonavi.minimap.ime:keyCode="-59" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="," com.autonavi.minimap.ime:keyCode="55" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="." com.autonavi.minimap.ime:keyCode="56" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="\?" com.autonavi.minimap.ime:keyCode="-63" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" com.autonavi.minimap.ime:keyCode="@integer/keycode_pick_input_method" style="@style/SoftKey.Button" />
+    </LinearLayout>
+    <LinearLayout style="@style/SoftKeyRow">
+        <com.autonavi.minimap.ime.widget.SoftKeyImageButton android:src="@drawable/ic_space_bar" android:layout_weight="6.0" com.autonavi.minimap.ime:keyCode="62" style="@style/SoftKey.ImageButton" />
+        <com.autonavi.minimap.ime.widget.SoftKeyImageButton android:src="@drawable/ic_triangle_left" com.autonavi.minimap.ime:keyCode="21" style="@style/SoftKey.ImageButton" />
+        <com.autonavi.minimap.ime.widget.SoftKeyImageButton android:src="@drawable/ic_triangle_right" com.autonavi.minimap.ime:keyCode="22" style="@style/SoftKey.ImageButton" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:text="@string/ok" android:layout_weight="2.0" com.autonavi.minimap.ime:keyCode="66" style="@style/SoftKey.Button" />
+    </LinearLayout>
+</com.autonavi.minimap.ime.widget.SoftKeyboard>

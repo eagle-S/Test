@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="register_soft_keyboard_enabled">false</bool>
+    <bool name="settings_chinese_only_enabled">false</bool>
+    <bool name="settings_first_letter_enabled">false</bool>
+</resources>
