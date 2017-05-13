@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:topLeftRadius="@dimen/auto_dimen2_20" android:topRightRadius="@dimen/auto_dimen2_20" android:bottomLeftRadius="@dimen/auto_dimen2_20" android:bottomRightRadius="@dimen/auto_dimen2_20" />
-    <solid android:color="@color/common_btn_blue_pressed" />
-    <stroke android:width="2.0px" android:color="@color/auto_color_1781f8" />
-</shape>

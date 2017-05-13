@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/error_report_radio" />
-    <item android:state_checked="false" android:drawable="@drawable/error_report_un_radio" />
-    <item android:drawable="@drawable/error_report_un_radio" />
-</selector>

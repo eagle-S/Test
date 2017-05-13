@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/v4_idle_tap_item_bg_hl" />
-    <item android:drawable="@drawable/bg_superfromto_tr" />
-</selector>
