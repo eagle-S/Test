@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke
+                android:width="@dimen/auto_dimen2_2"
+                android:color="@color/auto_color_ffffff_80" />
+            <solid android:color="@color/auto_color_f3f7fb_95" />
+            <corners android:radius="@dimen/auto_dimen2_6" />
+            <padding
+                android:bottom="@dimen/auto_dimen2_2"
+                android:left="@dimen/auto_dimen2_2"
+                android:right="@dimen/auto_dimen2_2"
+                android:top="@dimen/auto_dimen2_2" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@id/ll_his_clear_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@id/tv_his_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/auto_dimen_80"
+            android:background="@drawable/around_search_item_selector_without_background"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/auto_search_his_clear_all"
+            android:textColor="@color/auto_color_9da3b0"
+            android:textSize="@dimen/auto_font_size_22" />
+    </LinearLayout>
+</LinearLayout>

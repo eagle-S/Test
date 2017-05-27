@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progress_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/auto_dialog_bg"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/auto_dimen2_101"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/progressbar_view"
+        android:layout_width="@dimen/auto_dimen2_120"
+        android:layout_height="@dimen/auto_dimen2_100"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="@dimen/auto_dimen2_30"
+            android:layout_height="@dimen/auto_dimen2_30"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/common_progressbar"
+            android:indeterminateDuration="1000"
+            android:indeterminateOnly="true"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/auto_dimen_40"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/progress_message"
+            android:textColor="@color/auto_color_212125"
+            android:textSize="@dimen/auto_font_size_28" />
+
+        <TextView
+            android:id="@+id/additional_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/auto_font_size_20"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_btn_close"
+        android:layout_width="@dimen/auto_dimen2_100"
+        android:layout_height="@dimen/auto_dimen2_100"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="@dimen/auto_dimen_1"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/auto_dimen2_12"
+            android:layout_marginTop="@dimen/auto_dimen2_12"
+            android:background="@color/auto_color_c5d5ea_70" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/auto_progress_dlg_close_selector" />
+    </RelativeLayout>
+</LinearLayout>

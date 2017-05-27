@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@id/auto_navi_info_bg_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/auto_bg_out_sytle_threed_day"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/auto_dimen2_155"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/iv_navigation_direction"
+                android:layout_width="@dimen/auto_dimen2_100"
+                android:layout_height="@dimen/auto_dimen2_100"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/auto_dimen2_12"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:id="@id/ll_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_navigation_direction"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/tv_next_road_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/auto_dimen2_2"
+                        android:singleLine="true"
+                        android:text="300"
+                        android:textColor="@color/auto_color_ffffff"
+                        android:textSize="@dimen/auto_font_size_48" />
+
+                    <TextView
+                        android:id="@id/tv_next_road_after"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_next_road_distance"
+                        android:text="米后"
+                        android:textColor="@color/auto_color_ffffff"
+                        android:textSize="@dimen/auto_font_size_24"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/tv_next_road_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="厦门市思明区"
+                    android:textColor="@color/auto_color_ffffff"
+                    android:textSize="@dimen/auto_font_size_24" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/ll_eta"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/auto_dimen2_55"
+            android:layout_marginLeft="@dimen/auto_dimen2_1"
+            android:layout_marginRight="@dimen/auto_dimen2_1"
+            android:background="@drawable/auto_bg_navi_eta_threed_day"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_4"
+                android:layout_marginRight="@dimen/auto_dimen2_4"
+                android:text="@string/navi_eta_remain"
+                android:textColor="@color/auto_color_586c7f_night"
+                android:textSize="@dimen/auto_font_size_20" />
+
+            <TextView
+                android:id="@id/remaining_distance_landscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="5760公里"
+                android:textColor="@color/auto_color_ffffff"
+                android:textSize="@dimen/auto_font_size_26" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/auto_dimen_6"
+                android:layout_marginRight="@dimen/auto_dimen_6"
+                android:src="@drawable/auto_ic_navi_eta_2d_point_night" />
+
+            <TextView
+                android:id="@id/remaining_time_landscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="13小时20分钟"
+                android:textColor="@color/auto_color_ffffff"
+                android:textSize="@dimen/auto_font_size_26" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

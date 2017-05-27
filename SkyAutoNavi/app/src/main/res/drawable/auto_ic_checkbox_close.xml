@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_25" />
+            <solid android:color="#ff7688a6" />
+            <stroke android:width="@dimen/auto_dimen2_2" android:color="#ff475978" />
+            <size android:height="@dimen/auto_dimen2_50" android:width="@dimen/auto_dimen2_128" />
+        </shape>
+    </item>
+    <item android:left="@dimen/auto_dimen2_10">
+        <bitmap android:gravity="center|left" android:src="@drawable/auto_ic_checkbox_inner" />
+    </item>
+</layer-list>

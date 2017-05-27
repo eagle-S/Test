@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/auto_search_listview_item_height"
+    android:background="@drawable/around_search_item_selector_without_background"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/auto_search_listview_item_height"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/auto_dest_list_item_margin"
+    android:paddingRight="@dimen/auto_dest_list_item_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/auto_destination_navi" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/auto_dest_list_item_margin"
+            android:layout_marginRight="@dimen/auto_dest_list_item_margin"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/poi_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_drawable"
+                android:drawablePadding="9.0dip"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_dest_list_item_name_textsize" />
+
+            <LinearLayout
+                android:id="@+id/dest_poi_ext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dimen_6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dest_poi_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textColor="@color/auto_color_586c7f"
+                    android:textSize="@dimen/auto_dest_list_item_tag_addr_textsize"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/divider_point"
+                    android:layout_width="@dimen/auto_dimen2_5"
+                    android:layout_height="@dimen/auto_dimen2_5"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@color/auto_color_586c7f" />
+
+                <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_drawable"
+                    android:duplicateParentState="true"
+                    android:ellipsize="end"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:textColor="@color/auto_color_586c7f"
+                    android:textSize="@dimen/auto_dest_list_item_tag_addr_textsize"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/img_plus_view"
+            android:layout_width="@dimen/auto_search_resut_navi_width_value"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/img_plus_view_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auto_default_generalsearch_btn_plus_selector"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/auto_dimen_6"
+                android:gravity="center"
+                android:textColor="@color/auto_default_btn_text_color"
+                android:textSize="@dimen/search_default_second_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/auto_destination_list_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:background="@color/auto_color_c0ccdc" />
+</LinearLayout>

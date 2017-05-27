@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyworthauto.navi.views.SearchHomeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/auto_search_global_padding"
+    android:background="@drawable/auto_bg_out_sytle_day"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/auto_home_title_layout"
+        layout="@layout/search_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_search_common_title_height"
+        android:layout_alignParentTop="true" />
+
+    <include
+        android:id="@+id/auto_dest_hot_layout"
+        layout="@layout/search_hot_point_layout"
+        android:layout_width="@dimen/auto_dest_hot_layout_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/auto_home_title_layout"
+        android:layout_margin="@dimen/auto_dest_hot_layout_padding" />
+
+    <ListView
+        android:id="@+id/auto_destination_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/auto_home_title_layout"
+        android:layout_toLeftOf="@id/auto_dest_hot_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/auto_destination_no_history"
+        layout="@layout/search_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/auto_home_title_layout"
+        android:layout_toLeftOf="@id/auto_dest_hot_layout"
+        android:paddingLeft="@dimen/auto_dest_no_history_padding" />
+
+</com.skyworthauto.navi.views.SearchHomeView>

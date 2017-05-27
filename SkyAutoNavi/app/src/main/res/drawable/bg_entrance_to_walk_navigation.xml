@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#99000000" />
+    <corners android:topLeftRadius="@dimen/ndf_entrance_to_navigation_corners" android:topRightRadius="@dimen/ndf_entrance_to_navigation_corners" android:bottomLeftRadius="@dimen/ndf_entrance_to_navigation_corners" android:bottomRightRadius="@dimen/ndf_entrance_to_navigation_corners" />
+</shape>

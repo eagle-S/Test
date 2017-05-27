@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rest_view_double"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/auto_dimen2_108"
+            android:background="@drawable/auto_bg_navi_panel_shadow"
+            android:paddingBottom="@dimen/auto_dimen2_13"
+            android:paddingLeft="@dimen/auto_dimen2_10"
+            android:paddingRight="@dimen/auto_dimen2_10"
+            android:paddingTop="@dimen/auto_dimen2_7">
+
+            <RelativeLayout
+                android:id="@+id/auto_navi_rest_second_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_dimen2_88"
+                android:background="@drawable/auto_bg_navi_restinfo"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/auto_second_rest_station_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/auto_dimen2_12"
+                    android:layout_marginLeft="@dimen/auto_dimen2_24"
+                    android:layout_marginTop="@dimen/auto_dimen2_12"
+                    android:src="@drawable/auto_ic_navi_highway_toll_station" />
+
+                <ImageView
+                    android:id="@+id/iv_second_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/auto_dimen2_24"
+                    android:src="@drawable/auto_ic_navi_zsy"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/auto_dimen2_24"
+                    android:layout_marginRight="@dimen/auto_dimen2_24"
+                    android:layout_toLeftOf="@id/iv_second_gas"
+                    android:layout_toRightOf="@id/auto_second_rest_station_img"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/auto_second_rest_station_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/auto_dimen_10"
+                        android:singleLine="true"
+                        android:text="70公里"
+                        android:textColor="@color/auto_color_202025"
+                        android:textSize="@dimen/auto_font_size_24" />
+
+                    <TextView
+                        android:id="@+id/auto_second_rest_station_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/auto_dimen_5"
+                        android:layout_marginTop="@dimen/auto_dimen2_4"
+                        android:singleLine="true"
+                        android:text="翔安服务区"
+                        android:textColor="@color/auto_color_202025"
+                        android:textSize="@dimen/auto_font_size_24" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/auto_bg_navi_panel_shadow"
+            android:paddingBottom="@dimen/auto_dimen2_13"
+            android:paddingLeft="@dimen/auto_dimen2_10"
+            android:paddingRight="@dimen/auto_dimen2_10"
+            android:paddingTop="@dimen/auto_dimen2_7">
+
+            <RelativeLayout
+                android:id="@+id/auto_navi_rest_first_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_dimen2_110"
+                android:background="@drawable/auto_bg_navi_restinfo"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/auto_first_rest_station_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/auto_dimen2_24"
+                    android:layout_marginLeft="@dimen/auto_dimen2_24"
+                    android:layout_marginTop="@dimen/auto_dimen2_24"
+                    android:src="@drawable/auto_ic_navi_highway_service_area" />
+
+                <ImageView
+                    android:id="@+id/iv_first_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/auto_dimen2_24"
+                    android:src="@drawable/auto_ic_navi_zsh"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/auto_dimen2_24"
+                    android:layout_marginRight="@dimen/auto_dimen2_24"
+                    android:layout_toLeftOf="@id/iv_first_gas"
+                    android:layout_toRightOf="@id/auto_first_rest_station_img"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/auto_first_rest_station_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="50公里"
+                        android:textColor="@color/auto_color_202025"
+                        android:textSize="@dimen/auto_font_size_24" />
+
+                    <TextView
+                        android:id="@+id/auto_first_rest_station_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/auto_dimen2_4"
+                        android:singleLine="true"
+                        android:text="南安服务区"
+                        android:textColor="@color/auto_color_202025"
+                        android:textSize="@dimen/auto_font_size_24" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rest_view_single"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/auto_bg_navi_panel_shadow"
+        android:paddingBottom="@dimen/auto_dimen2_13"
+        android:paddingLeft="@dimen/auto_dimen2_10"
+        android:paddingRight="@dimen/auto_dimen2_10"
+        android:paddingTop="@dimen/auto_dimen2_7"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/auto_dimen2_110"
+            android:background="@drawable/auto_bg_navi_restinfo"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/auto_single_rest_station_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/auto_dimen2_24"
+                android:layout_marginLeft="@dimen/auto_dimen2_24"
+                android:layout_marginTop="@dimen/auto_dimen2_24"
+                android:src="@drawable/auto_ic_navi_highway_service_area" />
+
+            <ImageView
+                android:id="@+id/iv_single_gas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/auto_dimen2_24"
+                android:src="@drawable/auto_ic_navi_zsh"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/auto_dimen2_24"
+                android:layout_marginRight="@dimen/auto_dimen2_24"
+                android:layout_toRightOf="@id/auto_single_rest_station_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auto_single_rest_station_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="50公里"
+                    android:textColor="@color/auto_color_202025"
+                    android:textSize="@dimen/auto_font_size_24" />
+
+                <TextView
+                    android:id="@+id/auto_single_rest_station_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auto_dimen2_4"
+                    android:singleLine="true"
+                    android:text="南安服务区"
+                    android:textColor="@color/auto_color_202025"
+                    android:textSize="@dimen/auto_font_size_24" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

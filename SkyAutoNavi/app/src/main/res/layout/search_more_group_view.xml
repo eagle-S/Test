@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auto_search_more_group_name"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/auto_category_group_padding_bottom"
+    android:paddingTop="@dimen/auto_category_group_padding_top"
+    android:textColor="@color/auto_color_586c7f"
+    android:textSize="@dimen/auto_category_group_textsize" />

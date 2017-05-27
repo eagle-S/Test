@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyworthauto.navi.views.NaviLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.skyworthauto.navi.views.NaviLinearLayout
+        android:id="@+id/auto_dest_home_company_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/auto_dest_home_company_radius_bg"
+        android:orientation="horizontal">
+
+        <com.skyworthauto.navi.views.NaviLinearLayout
+            android:id="@+id/auto_dest_home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_dest_hot_item_left_radius_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/auto_dest_home_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/auto_dest_go_home_empty" />
+
+            <TextView
+                android:id="@+id/auto_dest_home_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dest_home_company_drawable_padding"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="5"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="@string/auto_dest_go_home"
+                android:textColor="@color/auto_dest_hot_item_textcolor"
+                android:textSize="@dimen/auto_dest_hot_textsize" />
+        </com.skyworthauto.navi.views.NaviLinearLayout>
+
+        <View
+            android:layout_width="@dimen/auto_dimen2_1"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/auto_dest_home_company_divider_margin"
+            android:layout_marginTop="@dimen/auto_dest_home_company_divider_margin"
+            android:background="@color/auto_color_c0ccdc" />
+
+        <com.skyworthauto.navi.views.NaviLinearLayout
+            android:id="@+id/auto_dest_company"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_dest_hot_item_no_radius_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/auto_dest_company_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/auto_dest_go_company_empty" />
+
+            <TextView
+                android:id="@+id/auto_dest_company_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dest_home_company_drawable_padding"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="5"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="@string/auto_dest_go_company"
+                android:textColor="@color/auto_dest_hot_item_textcolor"
+                android:textSize="@dimen/auto_dest_hot_textsize" />
+        </com.skyworthauto.navi.views.NaviLinearLayout>
+
+        <View
+            android:layout_width="@dimen/auto_dimen2_1"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/auto_dest_home_company_divider_margin"
+            android:layout_marginTop="@dimen/auto_dest_home_company_divider_margin"
+            android:background="@color/auto_color_c0ccdc" />
+
+        <com.skyworthauto.navi.views.NaviLinearLayout
+            android:id="@+id/auto_dest_favor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_dest_hot_item_right_radius_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/auto_dest_favor_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/auto_dest_favorite" />
+
+            <TextView
+                android:id="@+id/auto_dest_favor_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dest_home_company_drawable_padding"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="5"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="@string/auto_dest_favorite"
+                android:textColor="@color/auto_dest_hot_item_textcolor"
+                android:textSize="@dimen/auto_dest_hot_textsize" />
+        </com.skyworthauto.navi.views.NaviLinearLayout>
+    </com.skyworthauto.navi.views.NaviLinearLayout>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dest_around_space_height" />
+
+    <com.skyworthauto.navi.views.NaviLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/auto_dest_hot_item_toilet"
+            layout="@layout/search_hot_point_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <Space
+            android:layout_width="@dimen/auto_dest_around_space_height"
+            android:layout_height="fill_parent" />
+
+        <include
+            android:id="@+id/auto_dest_hot_item_gas_station"
+            layout="@layout/search_hot_point_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <Space
+            android:layout_width="@dimen/auto_dest_around_space_height"
+            android:layout_height="fill_parent" />
+
+        <include
+            android:id="@+id/auto_dest_hot_item_parking_lot"
+            layout="@layout/search_hot_point_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </com.skyworthauto.navi.views.NaviLinearLayout>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dest_around_space_height" />
+
+    <com.skyworthauto.navi.views.NaviLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/auto_dest_hot_item_car_wash"
+            layout="@layout/search_hot_point_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <Space
+            android:layout_width="@dimen/auto_dest_around_space_height"
+            android:layout_height="fill_parent" />
+
+        <include
+            android:id="@+id/auto_dest_hot_item_car_repair"
+            layout="@layout/search_hot_point_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <Space
+            android:layout_width="@dimen/auto_dest_around_space_height"
+            android:layout_height="fill_parent" />
+
+        <include
+            android:id="@+id/auto_dest_hot_item_more"
+            layout="@layout/search_hot_point_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </com.skyworthauto.navi.views.NaviLinearLayout>
+</com.skyworthauto.navi.views.NaviLinearLayout>

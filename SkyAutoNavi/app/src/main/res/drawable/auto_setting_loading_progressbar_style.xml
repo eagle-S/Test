@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="0.0dip" />
+                <solid android:color="#ff0091ff" />
+                <span style="font-family: Arial, Helvetica, sans-serif;" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

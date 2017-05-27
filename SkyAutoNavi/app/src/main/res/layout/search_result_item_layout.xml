@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/poi_item_layout_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/root_layout_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/right_detail_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:src="@drawable/auto_ic_result_detail" />
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/right_detail_image"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/auto_dimen2_19"
+            android:paddingLeft="@dimen/auto_dimen2_24"
+            android:paddingRight="@dimen/auto_dimen2_24"
+            android:paddingTop="@dimen/auto_dimen2_18">
+
+            <TextView
+                android:id="@+id/poi_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="1.0dip"
+                android:maxLines="2"
+                android:textColor="@color/auto_color_item_name_normal"
+                android:textSize="@dimen/auto_font_size_30"
+                tools:text="吉野家吉野家吉野家吉野家吉野家吉野家吉野家" />
+
+            <LinearLayout
+                android:id="@+id/addr_tag_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dimen2_13"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/auto_color_item_addr_normal"
+                        android:textSize="@dimen/auto_font_size_24"
+                        tools:text="100km" />
+
+                    <TextView
+                        android:id="@+id/tag_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/auto_dimen2_5"
+                        android:layout_marginRight="@dimen/auto_dimen2_5"
+                        android:text="@string/search_item_separator"
+                        android:textColor="@color/auto_color_item_addr_normal"
+                        android:textSize="@dimen/auto_font_size_24"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/auto_color_white"
+                        android:textSize="@dimen/auto_font_size_24"
+                        android:visibility="visible"
+                        tools:text="自助/火锅" />
+
+                    <TextView
+                        android:id="@+id/addr_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/auto_dimen2_5"
+                        android:layout_marginRight="@dimen/auto_dimen2_5"
+                        android:text="@string/search_item_separator"
+                        android:textColor="@color/auto_color_item_addr_normal"
+                        android:textSize="@dimen/auto_font_size_24"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/poi_addr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/auto_color_item_addr_normal"
+                    android:textSize="@dimen/auto_font_size_24"
+                    android:visibility="visible"
+                    tools:text="地址" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/road_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/cms_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dimen2_12"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/auto_color_item_deepinfo"
+                android:textSize="@dimen/auto_font_size_24"
+                android:visibility="gone"
+                tools:text="深度信息" />
+
+            <LinearLayout
+                android:id="@+id/park_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/price_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dimen2_12"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/auto_color_white"
+                android:textSize="@dimen/auto_font_size_24"
+                android:visibility="gone"
+                tools:text="价格" />
+
+            <LinearLayout
+                android:id="@+id/gas_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/child_station"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dimen2_12"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_c0ccdc" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyworthauto.navi.views.NoScrollGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auto_search_more_child_gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:cacheColorHint="#00000000"
+    android:fadeScrollbars="false"
+    android:fastScrollEnabled="false"
+    android:horizontalSpacing="@dimen/auto_category_grid_spacing"
+    android:listSelector="@null"
+    android:numColumns="5"
+    android:scrollbars="none"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="@dimen/auto_category_grid_spacing" />

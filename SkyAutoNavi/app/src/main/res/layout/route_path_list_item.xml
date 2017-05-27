@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/auto_panel_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/auto_panel_content_scheme_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/auto_panel_content_scheme_tag"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/auto_route_scheme_tag"
+                android:textColor="@color/auto_text_color_route_panel_content_multi_selector"
+                android:textSize="@dimen/auto_font_size_20" />
+
+            <ImageView
+                android:id="@+id/auto_panel_content_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/auto_dimen2_20"
+                android:src="@drawable/auto_route_multi_scheme_arrow_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/auto_panel_content_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/auto_panel_content_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="1小时23分钟"
+                android:textColor="@color/auto_text_color_route_panel_time_multi_selector"
+                android:textSize="@dimen/auto_font_size_30" />
+
+            <TextView
+                android:id="@+id/auto_panel_content_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/auto_dimen2_1"
+                android:layout_marginLeft="@dimen/auto_dimen2_24"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="17.2公里"
+                android:textColor="@color/auto_text_color_route_panel_time_multi_selector"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/auto_panel_content_camerainfo"
+            layout="@layout/route_path_camerainfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

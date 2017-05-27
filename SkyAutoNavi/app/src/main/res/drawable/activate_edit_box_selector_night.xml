@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+            <size android:height="@dimen/auto_dimen_48" android:width="@dimen/auto_dimen_140" />
+            <solid android:color="@color/activate_edit_box_bg" />
+            <stroke android:width="@dimen/auto_dimen_1" android:color="@color/activate_edit_box_stroke_focus" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <size android:height="@dimen/auto_dimen_48" android:width="@dimen/auto_dimen_140" />
+            <solid android:color="@color/activate_edit_box_bg" />
+            <stroke android:width="@dimen/auto_dimen_1" android:color="@color/activate_edit_box_stroke_focus" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <size android:height="@dimen/auto_dimen_48" android:width="@dimen/auto_dimen_140" />
+            <solid android:color="@color/activate_edit_box_bg" />
+            <stroke android:width="@dimen/auto_dimen_1" android:color="@color/activate_edit_box_stroke_focus" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <size android:height="@dimen/auto_dimen_48" android:width="@dimen/auto_dimen_140" />
+            <solid android:color="@color/activate_edit_box_bg" />
+            <stroke android:width="@dimen/auto_dimen_1" android:color="@color/activate_edit_box_stroke_normal" />
+        </shape>
+    </item>
+</selector>

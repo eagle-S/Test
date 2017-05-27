@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auto_search_more_child_item_text"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/auto_category_child_grid_item_only_text_height"
+    android:background="@drawable/auto_dest_hot_item_selector"
+    android:clickable="true"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxEms="5"
+    android:maxLength="5"
+    android:minHeight="@dimen/auto_category_child_grid_item_only_text_height"
+    android:singleLine="true"
+    android:textColor="@color/auto_color_586c7f"
+    android:textSize="@dimen/auto_category_group_textsize" />

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.ime.widget.SoftKeyboard android:orientation="vertical" android:id="@id/soft_keyboard_handwriting" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:com.autonavi.minimap.ime="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0">
+            <View android:id="@id/view_top" android:background="@color/auto_keyboard_background" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentTop="true" />
+            <View android:id="@id/view_bottom" android:background="@color/auto_keyboard_background" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            <RelativeLayout android:id="@id/view_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_bottom" android:layout_below="@id/view_top">
+                <View android:id="@id/view_center_left" android:background="@color/auto_keyboard_background" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/view_center_center" android:background="@color/auto_keyboard_background_alpha" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.autonavi.minimap.ime.handwriting.HandwritingBoard android:id="@id/hand_writing_board" android:background="#8c343a49" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/auto_keyboard_background" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/auto_keyboard_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <com.autonavi.minimap.ime.widget.HwWoodenCandidateListView android:id="@id/candidates" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_weight="2.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_weight="1.0">
+                <ImageButton android:id="@id/previousPage" android:background="@drawable/btn_key" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/system_imagebutton_margin" android:src="@drawable/ic_arrow_up" android:scaleType="centerInside" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/nextPage" android:background="@drawable/btn_key" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/system_imagebutton_margin" android:src="@drawable/ic_arrow_down" android:scaleType="centerInside" android:layout_weight="1.0" />
+                <com.autonavi.minimap.ime.widget.SoftKeyImageButton android:background="@drawable/btn_key" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@android:drawable/ic_input_delete" android:scaleType="centerInside" android:singleLine="false" android:layout_weight="1.0" com.autonavi.minimap.ime:keyCode="67" style="@style/SoftKey.Button" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/auto_keyboard_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.autonavi.minimap.ime.widget.SoftKeyImageButton android:background="@drawable/btn_key" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/pack_up_keyboard" android:scaleType="centerInside" android:singleLine="false" android:layout_weight="2.0" com.autonavi.minimap.ime:keyCode="@integer/keycode_toggle_input_method" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:background="@drawable/btn_key" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/input_method_symbol_label" android:layout_weight="2.0" com.autonavi.minimap.ime:keyCode="@integer/keycode_toggle_symbol" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:id="@id/inputmethod_changePannel" android:background="@drawable/btn_key" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/inputmethod_mode_pinyin_label" android:layout_weight="2.0" com.autonavi.minimap.ime:keyCode="@integer/keycode_pick_input_method" style="@style/SoftKey.Button" />
+        <com.autonavi.minimap.ime.widget.SoftKeyImageButton android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/backspace" android:layout_weight="2.0" com.autonavi.minimap.ime:keyCode="62" style="@style/SoftKey.ImageButton" />
+        <com.autonavi.minimap.ime.widget.SoftKeyButton android:textSize="23.0sp" android:textColor="@drawable/btn_textcolor_selector" android:gravity="center" android:background="@drawable/btn_key" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="@string/completed" android:singleLine="true" android:layout_weight="2.0" com.autonavi.minimap.ime:keyCode="66" />
+    </LinearLayout>
+</com.autonavi.minimap.ime.widget.SoftKeyboard>

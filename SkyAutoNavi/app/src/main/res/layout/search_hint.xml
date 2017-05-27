@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/auto_dest_no_history_padding">
+
+    <TextView
+        android:id="@+id/auto_dest_no_history_first_line_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_dest_no_history_first_line_no_voicesearch"
+        android:textColor="@color/auto_color_586c7f"
+        android:textSize="@dimen/auto_font_size_30" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dest_no_history_space_height" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dest_no_history_padding"
+            android:src="@drawable/no_history_dot1" />
+
+        <TextView
+            style="@style/auto_dest_no_history_text"
+            android:background="@drawable/auto_dest_no_history_blue_bg1"
+            android:text="@string/auto_dest_no_history_second_line" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dest_no_history_space_height" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dest_no_history_padding"
+            android:src="@drawable/no_history_dot2" />
+
+        <TextView
+            style="@style/auto_dest_no_history_text"
+            android:background="@drawable/auto_dest_no_history_blue_bg2"
+            android:text="@string/auto_dest_no_history_third_line" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dest_no_history_space_height" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dest_no_history_padding"
+            android:src="@drawable/no_history_dot3" />
+
+        <TextView
+            style="@style/auto_dest_no_history_text"
+            android:background="@drawable/auto_dest_no_history_blue_bg3"
+            android:text="@string/auto_dest_no_history_forth_line" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dest_no_history_space_height" />
+
+    <LinearLayout
+        android:id="@+id/speechsearch_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dest_no_history_padding"
+            android:src="@drawable/no_history_dot4" />
+
+        <TextView
+            style="@style/auto_dest_no_history_text"
+            android:background="@drawable/auto_dest_no_history_blue_bg4"
+            android:text="@string/auto_dest_no_history_fifth_line" />
+    </LinearLayout>
+</LinearLayout>

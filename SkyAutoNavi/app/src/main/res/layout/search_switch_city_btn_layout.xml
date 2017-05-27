@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/auto_search_switch_city"
+    android:layout_width="@dimen/search_switch_city_btn_with"
+    android:layout_height="@dimen/auto_switch_city_btn_height"
+    android:layout_marginLeft="@dimen/auto_switch_city_btn_margin_left"
+    android:background="@drawable/auto_switch_city_btn_selector"
+    android:clickable="true"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxEms="4"
+    android:paddingLeft="@dimen/auto_dimen2_5"
+    android:paddingRight="@dimen/auto_dimen2_5"
+    android:singleLine="true"
+    android:textColor="@color/auto_color_586c7f_search_switch_city"
+    android:textSize="@dimen/auto_switch_city_btn_textsize"
+    android:visibility="gone" />

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/auto_navi_talk_panel_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/auto_dimen2_30"
+        android:layout_marginTop="@dimen/auto_dimen2_222"
+        android:padding="@dimen/auto_dimen2_28">
+
+        <RelativeLayout
+            android:id="@id/auto_navi_talk_panel"
+            android:layout_width="@dimen/auto_dimen2_350"
+            android:layout_height="fill_parent">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/auto_bg_out_sytle_day"
+                android:paddingLeft="@dimen/auto_dimen2_10"
+                android:paddingRight="@dimen/auto_dimen2_10"
+                android:paddingTop="@dimen/auto_dimen2_25" />
+
+            <com.autonavi.navi.naviwidget.AutoNaviTalkViewChat
+                android:id="@id/auto_navi_talk_panel_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/auto_dimen2_60" />
+
+            <LinearLayout
+                android:id="@id/auto_speech_close_item"
+                android:layout_width="@dimen/auto_dimen2_54"
+                android:layout_height="@dimen/auto_dimen2_54"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/auto_ic_back_navispeech_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/auto_navi_talk_panel_parent"
+        android:layout_alignRight="@id/auto_navi_talk_panel_parent"
+        android:layout_marginBottom="@dimen/auto_dimen2_28">
+
+        <com.autonavi.minimap.speechrecognition.speechwidget.SpeechMicAnimateView
+            android:id="@id/auto_navi_talk_micro_item"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom" />
+
+        <TextView
+            android:id="@id/auto_navi_talk_unnetwork_item"
+            android:layout_width="@dimen/auto_dimen2_140"
+            android:layout_height="@dimen/auto_dimen2_60"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/auto_bg_btn_selector"
+            android:gravity="center"
+            android:text="去连网"
+            android:textColor="@color/auto_color_ffffff"
+            android:textSize="@dimen/auto_font_size_28"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

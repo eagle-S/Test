@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:com.autonavi.minimap.ime="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.minimap.ime.widget.ParentContainer android:orientation="vertical" android:id="@id/parent_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/soft_keyboards" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0" />
+    </com.autonavi.minimap.ime.widget.ParentContainer>
+</merge>
