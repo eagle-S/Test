@@ -1,0 +1,307 @@
+{
+    "common_quick_search": [
+        {
+            "name": "卫生间",
+            "pic": "around_icon_toilet"
+        },
+        {
+            "name": "加油站",
+            "pic": "around_icon_gas_station"
+        },
+        {
+            "name": "停车场",
+            "pic": "around_icon_parking_lot"
+        },
+        {
+            "name": "洗车",
+            "pic": "around_icon_car_wash"
+        },
+        {
+            "name": "汽车维修",
+            "pic": "around_icon_car_repair"
+        },
+        {
+            "name": "更多",
+            "pic": "around_icon_more"
+        }
+    ],
+    "search": {
+            "content": [
+                {
+                    "type": "常用",
+                    "words": [
+                        {
+                            "name": "卫生间",
+                            "pic": "around_icon_toilet"
+                        },
+                        {
+                            "name": "加油站",
+                            "pic": "around_icon_gas_station"
+                        },
+                        {
+                            "name": "停车场",
+                            "pic": "around_icon_parking_lot"
+                        },
+                        {
+                            "name": "美食",
+                            "pic": "around_icon_food"
+                        },
+                        {
+                            "name": "酒店",
+                            "pic": "around_icon_hotel"
+                        },
+                        {
+                            "name": "洗车",
+                            "pic": "around_icon_car_wash"
+                        },
+                        {
+                            "name": "汽车维修",
+                            "pic": "around_icon_car_repair"
+                        },
+                        {
+                            "name": "汽车保养",
+                            "pic": "around_icon_car_maintenance"
+                        },
+                        {
+                            "name": "银行",
+                            "pic": "around_icon_bank"
+                        },
+                        {
+                            "name": "购物",
+                            "pic": "around_icon_shopping"
+                        }
+                    ]
+                },
+                {
+                    "type": "出行",
+                    "words": [
+                        {
+                            "name": "加油站"
+                        },
+                        {
+                            "name": "洗车"
+                        },
+                        {
+                            "name": "汽车维修"
+                        },
+                        {
+                            "name": "服务区"
+                        },
+                        {
+                            "name": "4S店"
+                        },
+                        {
+                            "name": "加气站"
+                        },
+                        {
+                            "name": "汽车站"
+                        },
+                        {
+                            "name": "火车站"
+                        },
+                        {
+                            "name": "飞机场"
+                        },
+                        {
+                            "name": "中石化"
+                        }
+                    ]
+                },
+                {
+                    "type": "餐饮",
+                    "words": [
+                        {
+                            "name": "中餐"
+                        },
+                        {
+                            "name": "快餐"
+                        },
+                        {
+                            "name": "火锅"
+                        },
+                        {
+                            "name": "西餐"
+                        },
+                        {
+                            "name": "咖啡厅"
+                        },
+                        {
+                            "name": "美食"
+                        },
+                        {
+                            "name": "川菜"
+                        },
+                        {
+                            "name": "韩国料理"
+                        },
+                        {
+                            "name": "日本料理"
+                        },
+                        {
+                            "name": "小吃"
+                        }
+                    ]
+                },
+                {
+                    "type": "住宿",
+                    "words": [
+                        {
+                            "name": "宾馆"
+                        },
+                        {
+                            "name": "星级酒店"
+                        },
+                        {
+                            "name": "酒店"
+                        },
+                        {
+                            "name": "快捷酒店"
+                        },
+                        {
+                            "name": "三星级"
+                        },
+                        {
+                            "name": "四星级"
+                        },
+                        {
+                            "name": "五星级"
+                        },
+                        {
+                            "name": "汉庭酒店"
+                        },
+                        {
+                            "name": "如家酒店"
+                        },
+                        {
+                            "name": "七天酒店"
+                        }
+                    ]
+                },
+                {
+                    "type": "出游",
+                    "words": [
+                        {
+                            "name": "风景名胜"
+                        },
+                        {
+                            "name": "公园广场"
+                        },
+                        {
+                            "name": "游乐场"
+                        },
+                        {
+                            "name": "动物园"
+                        },
+                        {
+                            "name": "博物馆"
+                        }
+                    ]
+                },
+                {
+                    "type": "购物",
+                    "words": [
+                        {
+                            "name": "超市"
+                        },
+                        {
+                            "name": "商场"
+                        },
+                        {
+                            "name": "药店"
+                        },
+                        {
+                            "name": "便利店"
+                        },
+                        {
+                            "name": "步行街"
+                        },
+                        {
+                            "name": "花店"
+                        },
+                        {
+                            "name": "五金店"
+                        },
+                        {
+                            "name": "家具建材"
+                        },
+                        {
+                            "name": "万达广场"
+                        },
+                        {
+                            "name": "苏宁"
+                        }
+                    ]
+                },
+                {
+                    "type": "娱乐",
+                    "words": [
+                        {
+                            "name": "网吧"
+                        },
+                        {
+                            "name": "KTV"
+                        },
+                        {
+                            "name": "电影院"
+                        },
+                        {
+                            "name": "洗浴"
+                        },
+                        {
+                            "name": "足疗"
+                        },
+                        {
+                            "name": "台球"
+                        },
+                        {
+                            "name": "酒吧"
+                        },
+                        {
+                            "name": "夜店"
+                        },
+                        {
+                            "name": "体育馆"
+                        },
+                        {
+                            "name": "按摩"
+                        }
+                    ]
+                },
+                {
+                    "type": "生活",
+                    "words": [
+                        {
+                            "name": "银行"
+                        },
+                        {
+                            "name": "ATM"
+                        },
+                        {
+                            "name": "医院"
+                        },
+                        {
+                            "name": "药店"
+                        },
+                        {
+                            "name": "卫生间"
+                        },
+                        {
+                            "name": "邮局"
+                        },
+                        {
+                            "name": "快递"
+                        },
+                        {
+                            "name": "美容美发"
+                        },
+                        {
+                            "name": "电讯营业厅"
+                        },
+                        {
+                            "name": "宠物"
+                        }
+                    ]
+                }
+            ]
+        }
+}

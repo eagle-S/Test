@@ -95,7 +95,7 @@
             android:scaleType="centerInside"
             android:src="@drawable/auto_ic_refresh_map" />-->
 
-    <ImageView
+   <!-- <ImageView
         android:id="@+id/gd_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,13 +103,15 @@
         android:layout_marginBottom="@dimen/auto_dimen2_28"
         android:layout_marginRight="@dimen/auto_dimen2_18"
         android:layout_toLeftOf="@id/map_zoom_layout"
-        android:src="@drawable/auto_ic_common_logo" />
+        android:src="@drawable/auto_ic_common_logo" />-->
 
-    <FrameLayout
-        android:id="@+id/scaleline_layout"
+    <TextView
+        android:id="@+id/tv_scaleline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/gd_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/auto_dimen2_28"
+        android:layout_marginRight="@dimen/auto_dimen2_18"
         android:layout_toLeftOf="@id/map_zoom_layout" />
 
 

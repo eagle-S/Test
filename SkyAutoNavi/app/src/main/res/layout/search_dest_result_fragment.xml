@@ -96,7 +96,7 @@
                 android:id="@+id/search_result_navi_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="去这里"
+                android:text="@string/go_here"
                 android:textColor="@color/auto_color_search_navi"
                 android:textSize="@dimen/auto_font_size_26" />
         </LinearLayout>

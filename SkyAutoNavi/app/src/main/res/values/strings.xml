@@ -1954,7 +1954,7 @@ ISBN978-7-89416-454-4
     <string name="excess_station_title">多余的站点</string>
     <string name="exit">出口</string>
     <string name="exit_application">退出</string>
-    <string name="exit_application_confirm">再按一次退出高德地图</string>
+    <string name="exit_application_confirm">再按一次退出地图</string>
     <string name="exit_autonavi">确认要退出导航?</string>
     <string name="exit_building">离开建筑物</string>
     <string name="exit_dial">退出</string>
