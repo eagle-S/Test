@@ -20,7 +20,7 @@
             android:scaleType="centerInside"
             android:src="@drawable/auto_ic_back_selector" />
 
-        <View
+        <!--<View
             android:layout_width="1.0px"
             android:layout_height="fill_parent"
             android:background="@color/auto_route_divider_line"
@@ -40,13 +40,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:src="@drawable/auto_overview_add_waypoints" />
-        </LinearLayout>
+        </LinearLayout>-->
 
-        <ImageView
+        <!--<ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/auto_route_panle_dot"
-            android:visibility="gone" />
+            android:visibility="gone" />-->
 
         <TextView
             android:id="@+id/auto_route_panel_prefer_setting_tv"

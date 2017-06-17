@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/auto_dimen2_60">
+
+    <View
+        android:id="@id/search_detail_mid_line"
+        android:layout_width="@dimen/auto_dimen2_1"
+        android:layout_height="@dimen/auto_dimen_25"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/auto_dimen_25"
+        android:layout_marginRight="@dimen/auto_dimen_25"
+        android:background="@color/auto_color_c0ccdc" />
+
+    <LinearLayout
+        android:id="@id/search_detail_tip_collect_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/auto_dimen2_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@id/search_detail_tip_collect_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/auto_ic_collect" />
+
+        <TextView
+            android:id="@id/search_detail_tip_collect_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_12"
+            android:text="收藏"
+            android:textColor="@color/auto_color_586c7f"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/search_detail_tip_arround_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/auto_dimen2_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@id/around_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/auto_ic_around_selector" />
+
+        <TextView
+            android:id="@id/around_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_12"
+            android:text="查周边"
+            android:textColor="@drawable/auto_poicard_around_tv"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+</RelativeLayout>

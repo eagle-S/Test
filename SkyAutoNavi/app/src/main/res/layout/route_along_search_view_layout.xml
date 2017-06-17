@@ -20,7 +20,7 @@
             android:layout_marginLeft="@dimen/auto_dimen2_21"
             android:background="@drawable/route_bg_waypoints_all_number"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <TextView
                 android:id="@+id/route_waypoints_number_one_tv"

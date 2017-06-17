@@ -3,14 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--    <com.autonavi.framework.fragmentcontainer.MapInteractiveRelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />-->
-
     <RelativeLayout
         android:id="@+id/search_left_layout"
         android:layout_width="250dip"
         android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/auto_dimen2_28"
         android:clickable="true">
 
         <RelativeLayout
@@ -63,12 +60,18 @@
                     android:id="@+id/search_card_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <com.skyworthauto.navi.fragment.DestResultListView
                         android:id="@+id/dest_listview"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:dividerHeight="@dimen/auto_dimen2_0.7"
                         android:listSelector="@null" />
+
+                    <include
+                        android:id="@+id/auto_poi_detail_root_view"
+                        layout="@layout/auto_search_poi_detail_view"
+                        android:visibility="gone" />
 
                 </FrameLayout>
             </LinearLayout>
@@ -123,5 +126,18 @@
         android:layout_toRightOf="@id/search_left_layout"
         android:visibility="gone" />
 
+    <com.skyworthauto.navi.views.ClockTip
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/auto_dimen2_18"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/auto_dimen2_12"
+        android:background="@drawable/auto_selector_status_bar_top_bar"
+        android:textColor="@color/auto_color_586c7f"
+        android:textSize="@dimen/auto_dimen2_26"
+        android:textStyle="bold" />
 
+    <include layout="@layout/map_interactive_view" />
 </RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="0.0dip">
+
+    <RelativeLayout
+        android:id="@+id/left_frame"
+        android:layout_width="@dimen/auto_dimen_50"
+        android:layout_height="@dimen/auto_dimen2_90"
+        android:layout_marginLeft="@dimen/auto_dimen_10"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/direction_result_line_new"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/section_name_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/direction_bus_list_mid_ponit" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/auto_dimen2_22"
+            android:layout_height="@dimen/auto_dimen2_22"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/action_group9" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/left_frame"
+        android:background="@drawable/auto_overview_item_bg"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:minHeight="@dimen/auto_dimen_60"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/auto_color_202025"
+        android:textSize="@dimen/auto_font_size_24" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_toRightOf="@id/left_frame"
+        android:background="@color/auto_gray_bg_divider"
+        android:visibility="gone" />
+</RelativeLayout>

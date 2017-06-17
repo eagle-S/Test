@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.views.NaviRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.views.MapInteractiveView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_interactive_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
@@ -46,8 +47,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/auto_dimen2_21"
         android:background="@drawable/auto_bg_map_btn_selector"
-        android:focusable="true"
         android:clickable="true"
+        android:focusable="true"
         android:nextFocusLeft="@+id/iv_auto_overview_tmc"
         android:nextFocusRight="@id/map_zoom_in">
 
@@ -76,8 +77,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/auto_dimen2_21"
         android:background="@drawable/auto_bg_map_btn_selector"
-        android:focusable="true"
         android:clickable="true"
+        android:focusable="true"
         android:nextFocusLeft="@id/ib_status_bar_home"
         android:nextFocusRight="@id/fl_visual_mode_btn"
         android:scaleType="centerInside"
@@ -95,15 +96,15 @@
             android:scaleType="centerInside"
             android:src="@drawable/auto_ic_refresh_map" />-->
 
-   <!-- <ImageView
-        android:id="@+id/gd_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/auto_dimen2_28"
-        android:layout_marginRight="@dimen/auto_dimen2_18"
-        android:layout_toLeftOf="@id/map_zoom_layout"
-        android:src="@drawable/auto_ic_common_logo" />-->
+    <!-- <ImageView
+         android:id="@+id/gd_logo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="@dimen/auto_dimen2_28"
+         android:layout_marginRight="@dimen/auto_dimen2_18"
+         android:layout_toLeftOf="@id/map_zoom_layout"
+         android:src="@drawable/auto_ic_common_logo" />-->
 
     <TextView
         android:id="@+id/tv_scaleline"
@@ -115,4 +116,4 @@
         android:layout_toLeftOf="@id/map_zoom_layout" />
 
 
-</com.skyworthauto.navi.views.NaviRelativeLayout>
+</com.skyworthauto.navi.views.MapInteractiveView>

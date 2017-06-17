@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/station_list_item_des_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/auto_dimen_25"
+        android:background="@drawable/auto_bg_navi_action_group_sub"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/auto_dimen2_60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/auto_dimen_25"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_overview_item_bg"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:textColor="@color/auto_color_202025"
+            android:textSize="@dimen/auto_font_size_20" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_frame"
+        android:layout_width="@dimen/auto_dimen_50"
+        android:layout_height="@dimen/auto_dimen2_60"
+        android:gravity="center"
+        android:minHeight="@dimen/auto_dimen2_60">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/direction_result_line_new"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/item_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/direction_bus_list_turnpoint" />
+
+        <ImageView
+            android:id="@+id/action_icon"
+            android:layout_width="@dimen/auto_dimen2_22"
+            android:layout_height="@dimen/auto_dimen2_22"
+            android:layout_centerInParent="true"
+            android:background="@drawable/action_group3"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/station_list_item_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:layout_toRightOf="@id/left_frame"
+        android:background="@color/auto_color_677b95_30" />
+</RelativeLayout>

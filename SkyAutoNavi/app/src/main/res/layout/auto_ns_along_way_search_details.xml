@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ns_along_way_search_details_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/auto_ns_along_way_search_switch"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen_48"
+        android:background="@drawable/auto_bg_route_preference_gas_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/auto_dimen2_3"
+            android:layout_height="@dimen/auto_dimen2_20"
+            android:layout_marginRight="@dimen/auto_dimen2_11"
+            android:background="@color/auto_color_0091ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_navi_search_along"
+            android:textColor="@color/auto_color_212125"
+            android:textSize="@dimen/auto_font_size_26"/>
+
+        <TextView
+            android:id="@id/auto_ns_gas_preference"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="@string/quick_nav_qian_hao_she_zhi"
+            android:textColor="@color/black"
+            android:textSize="@dimen/auto_font_size_26" />
+
+        <ImageView
+            android:id="@id/auto_route_panel_prefer_setting_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/auto_dimen2_8"
+            android:layout_marginRight="@dimen/auto_dimen2_8"
+            android:background="@drawable/route_ic_preference_setting" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/auto_ns_along_search_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen_130"
+        android:background="@drawable/auto_bg_ns_out_sytle_inner_day"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@id/gasoline_station_view"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_navi_along_search_btn_selector"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/route_ic_ns_gas_station" />
+
+            <TextView
+                android:id="@id/tv_gasStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_8"
+                android:drawablePadding="@dimen/auto_dimen2_12"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/auto_navi_setting_along_gas_station"
+                android:textColor="@drawable/auto_navi_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_auto_ns_along_search_separator" />
+
+        <LinearLayout
+            android:id="@id/toilet_view"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_navi_along_search_btn_selector"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/route_ic_ns_toilet" />
+
+            <TextView
+                android:id="@id/tv_toilet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_8"
+                android:drawablePadding="@dimen/auto_dimen2_12"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/auto_navi_setting_along_wc"
+                android:textColor="@drawable/auto_navi_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_auto_ns_along_search_separator" />
+
+        <LinearLayout
+            android:id="@id/atm_view"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_navi_along_search_btn_selector"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/route_ic_ns_atm" />
+
+            <TextView
+                android:id="@id/tv_atm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_8"
+                android:drawablePadding="@dimen/auto_dimen2_12"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/auto_navi_setting_along_atm"
+                android:textColor="@drawable/auto_navi_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_auto_ns_along_search_separator" />
+
+        <LinearLayout
+            android:id="@id/garage_view"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_navi_along_search_btn_selector"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/route_ic_ns_repair" />
+
+            <TextView
+                android:id="@id/tv_repair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_8"
+                android:drawablePadding="@dimen/auto_dimen2_12"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/auto_navi_setting_along_repair"
+                android:textColor="@drawable/auto_navi_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24"
+                android:textStyle="normal"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

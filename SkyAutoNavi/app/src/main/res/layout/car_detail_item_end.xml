@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/section_name_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/auto_dimen_78"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/left_frame"
+        android:layout_width="@dimen/auto_dimen_50"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/auto_dimen_10">
+
+        <ImageView
+            android:id="@+id/section_name_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/direction_bus_list_end_point"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/direction_result_line_new_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/section_name_icon"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/direction_result_line_new"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/section_name"
+        style="@style/fromto_bus_result_detail_list_item_textview_station"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/auto_overview_item_bg"
+        android:clickable="false"
+        android:minHeight="@dimen/auto_dimen_60"
+        android:text="@string/arrive_in_end_point"
+        android:textColor="@color/auto_color_202025"
+        android:textSize="@dimen/auto_font_size_22" />
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--<com.autonavi.framework.widget.GeneralScrollBtnBar
+         android:id="@+id/auto_detail_scroll_bar"
+         android:layout_width="@dimen/auto_dimen2_76"
+         android:layout_height="fill_parent" />-->
+
+    <TextView
+        android:id="@+id/offline_tipView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/auto_search_list_cation_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/auto_dimen2_12"
+        android:paddingLeft="@dimen/auto_dimen2_24"
+        android:paddingRight="@dimen/auto_dimen2_24"
+        android:paddingTop="@dimen/auto_dimen2_12"
+        android:textColor="@color/auto_dest_hot_item_textcolor"
+        android:textSize="@dimen/auto_font_size_22"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/auto_poi_detail_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/offline_tipView"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/layer_poi_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/auto_dimen2_24"
+                android:paddingRight="@dimen/auto_dimen2_24">
+
+                <include
+                    android:id="@+id/search_detail_tip"
+                    layout="@layout/search_favorite_and_arround_menu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/auto_dimen2_60"
+                    android:visibility="gone" />
+
+                <Space
+                    android:id="@+id/space_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/auto_dimen2_58" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/auto_dimen2_138"
+                android:paddingLeft="@dimen/auto_dimen2_24"
+                android:paddingRight="@dimen/auto_dimen2_24"
+                android:paddingTop="@dimen/auto_dimen2_24">
+
+                <TextView
+                    android:id="@+id/poi_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="1.0dip"
+                    android:textColor="@color/auto_color_212125"
+                    android:textSize="@dimen/auto_font_size_30"
+                    tools:text="吉野家吉野家吉野家吉野家吉野家吉野家吉野家" />
+
+                <LinearLayout
+                    android:id="@+id/addr_tag_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auto_dimen2_24"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/auto_color_575b62"
+                        android:textSize="@dimen/auto_font_size_24"
+                        tools:text="100km" />
+
+                    <TextView
+                        android:id="@+id/tag_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/auto_dimen2_10"
+                        android:layout_marginRight="@dimen/auto_dimen2_10"
+                        android:textColor="@color/auto_color_575b62"
+                        android:textSize="@dimen/auto_font_size_24"
+                        android:visibility="gone"
+                        tools:text="@string/search_item_separator"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/poi_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxEms="8"
+                        android:singleLine="true"
+                        android:textColor="@color/auto_color_575b62"
+                        android:textSize="@dimen/auto_font_size_24"
+                        android:visibility="visible"
+                        tools:text="自助/火锅" />
+
+                    <TextView
+                        android:id="@+id/cost_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/auto_bg_search_deepinfo"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/auto_dimen2_4"
+                        android:paddingLeft="@dimen/auto_dimen2_6"
+                        android:paddingRight="@dimen/auto_dimen2_6"
+                        android:paddingTop="@dimen/auto_dimen2_4"
+                        android:textColor="@color/auto_color_0865b7"
+                        android:textSize="@dimen/auto_font_size_22"
+                        android:visibility="gone"
+                        tools:text="开车前往约..."
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/poi_addr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auto_dimen2_12"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_color_575b62"
+                    android:textSize="@dimen/auto_font_size_24"
+                    android:visibility="visible"
+                    tools:text="地址" />
+
+                <LinearLayout
+                    android:id="@+id/road_situation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/cms_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auto_dimen2_12"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_color_575b62"
+                    android:textSize="@dimen/auto_font_size_24"
+                    android:visibility="visible"
+                    tools:text="深度信息" />
+
+                <LinearLayout
+                    android:id="@+id/park_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/price_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auto_dimen2_12"
+                    android:ellipsize="end"
+                    android:textColor="@color/auto_color_575b62"
+                    android:textSize="@dimen/auto_font_size_24"
+                    android:visibility="visible"
+                    tools:text="价格" />
+
+                <LinearLayout
+                    android:id="@+id/gas_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/child_station"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auto_dimen2_12"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
