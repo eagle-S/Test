@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/auto_bg_out_sytle_day"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@id/ll_navigation_distance"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginTop="@dimen/auto_dimen2_36"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/tv_next_road_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="300"
+                android:textColor="@color/auto_color_202025"
+                android:textSize="@dimen/auto_font_size_48" />
+
+            <TextView
+                android:id="@id/tv_next_road_after"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen_15"
+                android:text="米后"
+                android:textColor="@color/auto_color_202025"
+                android:textSize="@dimen/auto_font_size_24"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_next_road_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/auto_dimen2_12"
+            android:layout_marginTop="@dimen/auto_dimen2_12"
+            android:singleLine="true"
+            tools:text="软件园二期望海路59号"
+            android:textColor="@color/auto_color_202025"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/iv_navigation_direction"
+        android:layout_width="@dimen/auto_dimen2_100"
+        android:layout_height="@dimen/auto_dimen2_100"
+        android:layout_marginLeft="@dimen/auto_dimen2_10"
+        android:layout_marginRight="@dimen/auto_dimen2_10"
+        android:layout_marginTop="@dimen/auto_dimen2_36"
+        android:contentDescription="@string/app_name"
+        android:gravity="center|right|top" />
+</LinearLayout>

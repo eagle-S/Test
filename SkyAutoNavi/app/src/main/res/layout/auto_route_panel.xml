@@ -77,13 +77,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/auto_dimen2_38"
-        android:layout_weight="1.0" >
+        android:layout_weight="1.0">
 
         <com.skyworthauto.navi.fragment.RouteSelectListView
             android:id="@+id/dest_path_listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
 
     </FrameLayout>
 </LinearLayout>

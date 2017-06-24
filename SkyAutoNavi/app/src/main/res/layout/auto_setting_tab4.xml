@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/auto_dest_hot_item_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/auto_setting_input_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_show_input_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_show_input_hint"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/auto_setting_input_checkbox"
+            android:layout_width="@dimen/auto_dimen2_128"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_ic_checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="@dimen/auto_dimen2_20"
+            android:paddingRight="@dimen/auto_dimen2_20"
+            android:paddingTop="0.0dip"
+            android:text="@string/auto_setting_status_close"
+            android:textColor="@color/auto_color_white"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_wakeup_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_wakeup_tts_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_wakeup_tts_hint"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/auto_setting_wakeup_checkbox"
+            android:layout_width="@dimen/auto_dimen2_180"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_ic_checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="@dimen/auto_dimen2_25"
+            android:paddingRight="@dimen/auto_dimen2_25"
+            android:paddingTop="0.0dip"
+            android:text="@string/auto_setting_status_close"
+            android:textColor="@color/auto_color_white"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_effect_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_show_effect_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:id="@id/auto_setting_effect_model_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_show_effect_best_tip"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/auto_setting_effect_checkbox"
+            android:layout_width="@dimen/auto_dimen2_128"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_ic_checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="@dimen/auto_dimen2_20"
+            android:paddingRight="@dimen/auto_dimen2_20"
+            android:paddingTop="0.0dip"
+            android:text="@string/auto_setting_status_close"
+            android:textColor="@color/auto_color_white"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_cache_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_clean_cache_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:id="@id/auto_setting_cache_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="1.0MB"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/auto_setting_cache_btn"
+            android:layout_width="@dimen/auto_dimen2_180"
+            android:layout_height="@dimen/auto_dimen2_60"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_bg_btn_blue_stroke_selector"
+            android:gravity="center"
+            android:text="@string/auto_string_setting_clean_cache_text"
+            android:textColor="@color/auto_color_white"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_reset_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_reset_configuration_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_reset_configuration_hint"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/auto_setting_reset_btn"
+            android:layout_width="@dimen/auto_dimen2_180"
+            android:layout_height="@dimen/auto_dimen2_60"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_bg_btn_blue_stroke_selector"
+            android:gravity="center"
+            android:text="立即恢复"
+            android:textColor="@color/auto_color_white"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_about_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen_100"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="@dimen/auto_dimen2_3"
+            android:layout_height="@dimen/auto_dimen2_20"
+            android:layout_marginLeft="@dimen/auto_dimen2_11"
+            android:layout_marginRight="@dimen/auto_dimen2_11"
+            android:background="@color/auto_color_0091ff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/auto_setting_about_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_about_app_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <ImageView
+                android:id="@id/auto_setting_about_text_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_6"
+                android:layout_toRightOf="@id/auto_setting_about_text"
+                android:src="@drawable/auto_ic_red_point"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@id/auto_setting_about_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/auto_dimen_24"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2.0"
+            android:textColor="@color/auto_color_3187f1"
+            android:textSize="@dimen/auto_font_size_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:src="@drawable/auto_more_arrow_icon" />
+    </LinearLayout>
+</LinearLayout>

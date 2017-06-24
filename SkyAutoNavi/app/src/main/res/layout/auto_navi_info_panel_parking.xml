@@ -264,7 +264,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/auto_dimen2_8"
-                android:src="@drawable/directions_more_down_black"/>
+                android:src="@drawable/directions_more_down_black" />
 
             <TextView
                 android:id="@id/tv_parking_number"
@@ -277,7 +277,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/auto_color_202025"
-                android:textSize="@dimen/auto_font_size_24"/>
+                android:textSize="@dimen/auto_font_size_24" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/auto_color_000000_30">
+
+    <LinearLayout
+        android:id="@+id/auto_setting_view_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="@dimen/auto_dimen2_28">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/auto_bg_out_sytle_day"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/auto_setting_title_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_dimen2_80"
+                android:background="@drawable/auto_search_title_top_all_radius_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/btn_search_back"
+                    layout="@layout/search_back" />
+
+                <TextView
+                    android:id="@+id/auto_setting_title"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:drawablePadding="@dimen/auto_search_text_title_padding"
+                    android:ellipsize="middle"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/auto_search_text_title_padding"
+                    android:singleLine="true"
+                    android:text="@string/sett"
+                    android:textColor="@color/auto_color_9eaebd"
+                    android:textSize="@dimen/auto_search_common_text_title_textsize" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/auto_setting_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/auto_setting_title_bar"
+                android:paddingLeft="@dimen/auto_dimen2_24"
+                android:paddingRight="@dimen/auto_dimen2_24">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/auto_setting_tab1_space"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_24" />
+
+                    <include layout="@layout/setting_content" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_24" />
+
+                    <!--<include
+                        android:id="@+id/auto_setting_tab1"
+                        layout="@layout/auto_setting_tab1" />
+
+                    <View
+                        android:id="@+id/auto_setting_tab2_space"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_24" />
+
+                    <include
+                        android:id="@+id/auto_setting_tab2"
+                        layout="@layout/auto_setting_tab2" />
+
+                    <View
+                        android:id="@+id/auto_setting_tab3_space"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_24" />
+
+                    <include
+                        android:id="@+id/auto_setting_tab3"
+                        layout="@layout/auto_setting_tab3" />
+
+                    <View
+                        android:id="@+id/auto_setting_tab4_space"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_24" />
+
+                    <include
+                        android:id="@+id/auto_setting_tab4"
+                        layout="@layout/auto_setting_tab4" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_24" />-->
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

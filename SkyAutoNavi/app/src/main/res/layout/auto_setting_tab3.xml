@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/auto_dest_hot_item_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_model_daynight_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:id="@id/auto_setting_model_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_model_daynight_auto_tip"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/auto_dimen2_60"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_bg_checkbox_selector">
+
+            <RelativeLayout
+                android:id="@id/auto_setting_auto_model_item"
+                android:layout_width="@dimen/auto_dimen2_128"
+                android:layout_height="fill_parent"
+                android:background="@drawable/auto_selector_bg_daynight_checkbox">
+
+                <TextView
+                    android:id="@id/auto_setting_auto_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/auto_string_setting_model_daynight_auto_text"
+                    android:textColor="@color/auto_route_setting_textcolor_selector"
+                    android:textSize="@dimen/auto_font_size_24" />
+
+                <ImageView
+                    android:id="@id/auto_setting_auto_model_radio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/auto_setting_auto_model"
+                    android:src="@drawable/auto_ic_check_radio"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@id/ns_separator_left"
+                android:layout_width="@dimen/auto_dimen2_2"
+                android:layout_height="fill_parent"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@id/auto_setting_day_model_item"
+                android:layout_width="@dimen/auto_dimen2_128"
+                android:layout_height="fill_parent"
+                android:background="@drawable/auto_selector_bg_daynight_checkbox">
+
+                <TextView
+                    android:id="@id/auto_setting_day_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/auto_string_setting_model_daynight_day_text"
+                    android:textColor="@color/auto_route_setting_textcolor_selector"
+                    android:textSize="@dimen/auto_font_size_24" />
+
+                <ImageView
+                    android:id="@id/auto_setting_day_model_radio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/auto_setting_day_model"
+                    android:src="@drawable/auto_ic_check_radio"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@id/ns_separator_right"
+                android:layout_width="@dimen/auto_dimen2_2"
+                android:layout_height="fill_parent"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@id/auto_setting_night_model_item"
+                android:layout_width="@dimen/auto_dimen2_128"
+                android:layout_height="fill_parent"
+                android:background="@drawable/auto_selector_bg_daynight_checkbox">
+
+                <TextView
+                    android:id="@id/auto_setting_night_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/auto_string_setting_model_daynight_night_text"
+                    android:textColor="@color/auto_route_setting_textcolor_selector"
+                    android:textSize="@dimen/auto_font_size_24" />
+
+                <ImageView
+                    android:id="@id/auto_setting_night_model_radio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/auto_setting_night_model"
+                    android:src="@drawable/auto_ic_check_radio"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_map_color_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen_200"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_style_map_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_style_map_hint"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/auto_dimen2_24">
+
+            <LinearLayout
+                android:id="@id/map_color_standard_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_24"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@id/auto_setting_mapcolor_standard"
+                        android:layout_width="@dimen/auto_dimen_140"
+                        android:layout_height="@dimen/auto_dimen_86"
+                        android:background="@drawable/auto_setting_map_day_standard" />
+
+                    <ImageView
+                        android:id="@id/auto_setting_mapcolor_standard_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/auto_setting_map_color_select_bg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auto_setting_mapcolor_standard"
+                    android:layout_marginTop="@dimen/auto_dimen_10"
+                    android:text="@string/auto_string_setting_style_map_standard_text"
+                    android:textColor="@color/auto_color_212125"
+                    android:textSize="@dimen/auto_font_size_20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/map_color_highlight_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_24"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@id/auto_setting_mapcolor_highlight"
+                        android:layout_width="@dimen/auto_dimen_140"
+                        android:layout_height="@dimen/auto_dimen_86"
+                        android:background="@drawable/auto_setting_map_day_highlight" />
+
+                    <ImageView
+                        android:id="@id/auto_setting_mapcolor_highlight_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/auto_setting_map_color_select_bg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/auto_dimen_10"
+                    android:text="@string/auto_string_setting_style_map_highlight_text"
+                    android:textColor="@color/auto_color_212125"
+                    android:textSize="@dimen/auto_font_size_20" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_fullscreen_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_show_statusbar_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:id="@id/auto_setting_statusbar_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_hide_statusbar_hint"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/auto_setting_fullscreen_checkbox"
+            android:layout_width="@dimen/auto_dimen2_128"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_ic_checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="@dimen/auto_dimen2_20"
+            android:paddingRight="@dimen/auto_dimen2_20"
+            android:paddingTop="0.0dip"
+            android:text="@string/auto_setting_status_close"
+            android:textColor="@color/auto_color_white"
+            android:textSize="@dimen/auto_font_size_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:layout_marginRight="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <LinearLayout
+        android:id="@id/auto_setting_favorite_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150"
+        android:background="@drawable/auto_item_bg_style1_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/auto_dimen2_3"
+                android:layout_height="@dimen/auto_dimen2_20"
+                android:layout_marginLeft="@dimen/auto_dimen2_11"
+                android:layout_marginRight="@dimen/auto_dimen2_11"
+                android:background="@color/auto_color_0091ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_string_setting_show_favorite_text"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_22" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/auto_string_setting_show_favorite_hint"
+                android:textColor="@color/auto_color_586c7f"
+                android:textSize="@dimen/auto_font_size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/auto_setting_favorite_checkbox"
+            android:layout_width="@dimen/auto_dimen2_128"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_24"
+            android:layout_marginTop="@dimen/auto_dimen2_24"
+            android:background="@drawable/auto_ic_checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="@dimen/auto_dimen2_20"
+            android:paddingRight="@dimen/auto_dimen2_20"
+            android:paddingTop="0.0dip"
+            android:textColor="@color/auto_color_white"
+            android:text="@string/auto_setting_status_close"
+            android:textSize="@dimen/auto_font_size_24"
+            tools:text="          关" />
+    </LinearLayout>
+</LinearLayout>
+
+    <!--android:text="@string/auto_setting_status_close"-->

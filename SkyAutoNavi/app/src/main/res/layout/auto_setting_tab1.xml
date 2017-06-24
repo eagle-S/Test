@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/auto_dest_hot_item_selector"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/auto_setting_route_preference_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_1"
+        android:layout_marginLeft="@dimen/auto_dimen2_24"
+        android:background="@color/auto_color_dde5f0" />
+
+    <!--<include
+        layout="@layout/auto_setting_avoid_waylimit_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_150" />-->
+</LinearLayout>

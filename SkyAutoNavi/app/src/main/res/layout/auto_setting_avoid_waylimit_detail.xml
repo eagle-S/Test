@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autoSkin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/auto_dimen2_24">
+
+        <com.autonavi.skin.view.SkinView
+            android:layout_width="@dimen/auto_dimen2_3"
+            android:layout_height="@dimen/auto_dimen2_20"
+            android:layout_marginLeft="@dimen/auto_dimen2_11"
+            android:layout_marginRight="@dimen/auto_dimen2_11"
+            android:background="@color/auto_color_0091ff" />
+
+        <com.autonavi.skin.view.SkinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_string_setting_avoid_waylimit_text"
+            android:textColor="@color/auto_color_212125"
+            android:textSize="@dimen/auto_font_size_22"
+            autoSkin:textColor4Night="@color/auto_color_212125_night"
+            autoSkin:textColor4Skin="@color/auto_color_212125" />
+
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@id/auto_setting_carplate_tip_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/auto_string_setting_avoid_waylimit_hint"
+            android:textColor="@color/auto_color_586c7f"
+            android:textSize="@dimen/auto_font_size_20"
+            autoSkin:textColor4Night="@color/auto_color_586c7f_night"
+            autoSkin:textColor4Skin="@color/auto_color_586c7f" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/auto_setting_avoidwaylimits_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_24"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/auto_dimen2_24"
+        android:paddingRight="@dimen/auto_dimen2_24">
+
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@id/auto_setting_avoidwaylimits_checkbox"
+            android:layout_width="@dimen/auto_dimen2_128"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/auto_dimen2_64"
+            android:background="@drawable/auto_ic_checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="@dimen/auto_dimen2_20"
+            android:paddingRight="@dimen/auto_dimen2_20"
+            android:paddingTop="0.0dip"
+            android:text="开"
+            android:textColor="@color/auto_color_white"
+            android:textSize="@dimen/auto_font_size_24"
+            autoSkin:background4Night="@drawable/auto_ic_checkbox_selector_night"
+            autoSkin:background4Skin="@drawable/auto_ic_checkbox_selector" />
+
+        <LinearLayout
+            android:id="@id/auto_setting_carplate_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.autonavi.skin.view.SkinView
+                android:layout_width="1.0px"
+                android:layout_height="@dimen/auto_dimen2_40"
+                android:layout_centerVertical="true"
+                android:background="@color/auto_color_b4c4d9"
+                autoSkin:background4Night="@color/auto_color_b4c4d9_night"
+                autoSkin:background4Skin="@color/auto_color_b4c4d9" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/auto_setting_carplate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen2_24"
+                android:text="闽D·8545R"
+                android:textColor="@color/auto_color_212125"
+                android:textSize="@dimen/auto_font_size_30"
+                autoSkin:textColor4Night="@color/auto_color_212125_night"
+                autoSkin:textColor4Skin="@color/auto_color_212125" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/auto_dimen2_1"
+                android:layout_weight="1.0" />
+
+            <com.autonavi.skin.view.SkinImageView
+                android:id="@id/auto_setting_carplate_editor"
+                android:layout_width="@dimen/auto_dimen2_90"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen_12"
+                android:src="@drawable/auto_ic_setting_edit_selector"
+                autoSkin:src4Night="@drawable/auto_ic_setting_edit_selector_night"
+                autoSkin:src4Skin="@drawable/auto_ic_setting_edit_selector" />
+
+            <com.autonavi.skin.view.SkinView
+                android:layout_width="1.0px"
+                android:layout_height="@dimen/auto_dimen_24"
+                android:background="@color/auto_color_b4c4d9"
+                autoSkin:background4Night="@color/auto_color_b4c4d9_night"
+                autoSkin:background4Skin="@color/auto_color_b4c4d9" />
+
+            <com.autonavi.skin.view.SkinImageView
+                android:id="@id/auto_setting_carplate_del"
+                android:layout_width="@dimen/auto_dimen2_90"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dimen_12"
+                android:src="@drawable/auto_ic_setting_del_selector"
+                autoSkin:src4Night="@drawable/auto_ic_setting_del_selector_night"
+                autoSkin:src4Skin="@drawable/auto_ic_setting_del_selector" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

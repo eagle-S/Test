@@ -117,7 +117,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="@dimen/auto_dimen2_24"
                     android:src="@drawable/auto_ic_navi_zsh"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"

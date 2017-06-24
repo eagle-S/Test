@@ -51,8 +51,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_marginBottom="5.0dip"
-                    android:divider="@color/auto_color_c0ccdc"
-                    android:dividerHeight="@dimen/auto_dimen2_1"
+                    android:divider="@null"
                     android:listSelector="@android:color/transparent" />
             </LinearLayout>
         </LinearLayout>

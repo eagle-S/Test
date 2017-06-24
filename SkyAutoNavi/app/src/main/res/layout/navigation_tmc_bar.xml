@@ -52,13 +52,13 @@
                     android:src="@drawable/auto_ic_navi_tmc_top" />
 
                 <!--<com.autonavi.navi.naviwidget.TmcBarView-->
-                    <!--android:id="@id/tmc_bar_view"-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="@dimen/auto_dimen2_200"-->
-                    <!--android:layout_below="@id/bg_top"-->
-                    <!--android:layout_marginBottom="@dimen/auto_dimen2_2"-->
-                    <!--android:layout_marginLeft="@dimen/auto_dimen2_2"-->
-                    <!--android:layout_marginRight="@dimen/auto_dimen2_2" />-->
+                <!--android:id="@id/tmc_bar_view"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="@dimen/auto_dimen2_200"-->
+                <!--android:layout_below="@id/bg_top"-->
+                <!--android:layout_marginBottom="@dimen/auto_dimen2_2"-->
+                <!--android:layout_marginLeft="@dimen/auto_dimen2_2"-->
+                <!--android:layout_marginRight="@dimen/auto_dimen2_2" />-->
             </RelativeLayout>
         </RelativeLayout>
 

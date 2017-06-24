@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/auto_dimen_318"
+    android:layout_height="@dimen/auto_dimen_174"
+    android:background="@drawable/auto_bg_out_sytle_day"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_auto_sim_navi"
+        android:layout_width="@dimen/auto_dimen_318"
+        android:layout_height="@dimen/auto_dimen_174"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_navigation_distance"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/auto_dimen2_20"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_next_road_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="123"
+                android:textColor="@color/auto_color_202025"
+                android:textSize="@dimen/auto_font_size_38"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_navigation_direction"
+                android:layout_width="@dimen/auto_dimen_80"
+                android:layout_height="@dimen/auto_dimen_80"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

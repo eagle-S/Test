@@ -65,8 +65,8 @@
                         android:id="@+id/dest_listview"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:dividerHeight="@dimen/auto_dimen2_0.7"
-                        android:listSelector="@null" />
+                        android:divider="@null"
+                        android:listSelector="@android:color/transparent" />
 
                     <include
                         android:id="@+id/auto_poi_detail_root_view"

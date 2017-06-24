@@ -4,6 +4,16 @@
     android:layout_height="match_parent">
 
     <ImageButton
+        android:id="@+id/iv_more_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_dimen2_28"
+        android:layout_marginTop="@dimen/auto_dimen2_28"
+        android:background="@drawable/auto_bg_map_btn_selector"
+        android:scaleType="centerInside"
+        android:src="@drawable/auto_map_more" />
+
+    <ImageButton
         android:id="@+id/ib_go_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +36,7 @@
 
     <include layout="@layout/map_interactive_view" />
 
-    <ImageButton
+    <Button
         android:id="@+id/ib_my_local"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/auto_dimen2_79"
@@ -34,29 +44,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/auto_dimen2_21"
         android:background="@drawable/auto_gocar_btn_slc"
-        android:clickable="true"
         android:gravity="center"
+        android:paddingLeft="@dimen/auto_dimen2_24"
+        android:paddingRight="@dimen/auto_dimen2_24"
         android:text="@string/my_location"
         android:textColor="@color/auto_color_ffffff"
         android:textSize="@dimen/auto_font_size_30" />
-
-    <!--<ImageView
-        android:id="@id/iv_local_ic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/auto_dimen2_24"
-        android:layout_marginRight="@dimen/auto_dimen2_12"
-        android:scaleType="center"
-        android:src="@drawable/auto_map_ic_gocar"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/auto_dimen2_24"
-        android:gravity="center"
-        android:singleLine="true"
-        android:text="@string/auto_map_gocar_str"
-        android:textColor="@color/auto_color_ffffff"
-        android:textSize="@dimen/auto_font_size_30"/>-->
 
 </RelativeLayout>

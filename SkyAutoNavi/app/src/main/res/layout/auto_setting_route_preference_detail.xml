@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/auto_dimen2_3"
+            android:layout_height="@dimen/auto_dimen2_20"
+            android:layout_marginLeft="@dimen/auto_dimen2_11"
+            android:layout_marginRight="@dimen/auto_dimen2_11"
+            android:background="@color/auto_color_0091ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_string_setting_preference_route_text"
+            android:textColor="@color/auto_color_212125"
+            android:textSize="@dimen/auto_font_size_22" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/auto_dimen2_60"
+        android:layout_marginTop="@dimen/auto_dimen2_24"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/auto_dimen2_24"
+        android:paddingRight="@dimen/auto_dimen2_24">
+
+        <RelativeLayout
+            android:id="@+id/auto_setting_avoid_jam_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/auto_dimen2_12"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_bg_checkbox_selector">
+
+            <TextView
+                android:id="@+id/auto_setting_avoid_jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/auto_string_setting_preference_route_avoid_jam_text"
+                android:textColor="@color/auto_route_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24" />
+
+            <ImageView
+                android:id="@+id/auto_setting_avoid_jam_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/auto_setting_avoid_jam"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/auto_ic_check_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/auto_setting_avoid_charge_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/auto_dimen2_12"
+            android:layout_marginRight="@dimen/auto_dimen2_12"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_bg_checkbox_selector">
+
+            <TextView
+                android:id="@+id/auto_setting_avoid_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/auto_string_setting_preference_route_avoid_charge_text"
+                android:textColor="@color/auto_route_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24" />
+
+            <ImageView
+                android:id="@+id/auto_setting_avoid_charge_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/auto_setting_avoid_charge"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/auto_ic_check_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/auto_setting_avoid_highway_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/auto_dimen2_12"
+            android:layout_marginRight="@dimen/auto_dimen2_12"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_bg_checkbox_selector">
+
+            <TextView
+                android:id="@+id/auto_setting_avoid_highway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/auto_string_setting_preference_route_avoid_highway_text"
+                android:textColor="@color/auto_route_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24" />
+
+            <ImageView
+                android:id="@+id/auto_setting_avoid_highway_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/auto_setting_avoid_highway"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/auto_ic_check_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/auto_setting_using_highway_item"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/auto_dimen2_12"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_bg_checkbox_selector">
+
+            <TextView
+                android:id="@+id/auto_setting_using_highway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/auto_string_setting_preference_route_using_highway_text"
+                android:textColor="@color/auto_route_setting_textcolor_selector"
+                android:textSize="@dimen/auto_font_size_24" />
+
+            <ImageView
+                android:id="@+id/auto_setting_using_highway_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/auto_setting_using_highway"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/auto_ic_check_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

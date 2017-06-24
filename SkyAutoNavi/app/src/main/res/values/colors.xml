@@ -657,9 +657,13 @@
     <color name="auto_offline_title_search_bg_color">#ff232832</color>
     <color name="auto_overview_item_pressed">#ff494f60</color>
     <color name="auto_overview_tab_bg">#ff2a2b37</color>
-    <color name="auto_overview_tab_distance_text_color_normal">@color/auto_overview_tab_time_text_color_normal</color>
+    <color name="auto_overview_tab_distance_text_color_normal">
+        @color/auto_overview_tab_time_text_color_normal
+    </color>
     <color name="auto_overview_tab_distance_text_color_selected">#ff00e367</color>
-    <color name="auto_overview_tab_right_line">@color/auto_overview_tab_distance_text_color_selected</color>
+    <color name="auto_overview_tab_right_line">
+        @color/auto_overview_tab_distance_text_color_selected
+    </color>
     <color name="auto_overview_tab_time_text_color_normal">#ff696a70</color>
     <color name="auto_overview_tab_time_text_color_selected">@android:color/white</color>
     <color name="auto_poi_start_guide">#ff0091ff</color>

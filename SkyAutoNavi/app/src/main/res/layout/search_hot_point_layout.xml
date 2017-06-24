@@ -18,6 +18,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:background="@drawable/auto_dest_hot_item_left_radius_selector"
+            android:focusable="true"
             android:clickable="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -56,6 +57,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:background="@drawable/auto_dest_hot_item_no_radius_selector"
+            android:focusable="true"
             android:clickable="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -95,6 +97,7 @@
             android:layout_weight="1.0"
             android:background="@drawable/auto_dest_hot_item_right_radius_selector"
             android:clickable="true"
+            android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -135,7 +138,8 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0"
+            android:focusable="true"/>
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -146,7 +150,8 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0"
+            android:focusable="true"/>
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -157,7 +162,8 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0"
+            android:focusable="true"/>
     </com.skyworthauto.navi.views.NaviLinearLayout>
 
     <Space
@@ -175,7 +181,8 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0"
+            android:focusable="true"/>
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -186,7 +193,8 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0"
+            android:focusable="true"/>
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -197,6 +205,7 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0"
+            android:focusable="true"/>
     </com.skyworthauto.navi.views.NaviLinearLayout>
 </com.skyworthauto.navi.views.NaviLinearLayout>

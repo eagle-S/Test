@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape>
-            <stroke android:width="@dimen/auto_dimen2_2" android:color="@color/auto_color_ffffff_80" />
+            <stroke
+                android:width="@dimen/auto_dimen2_2"
+                android:color="@color/auto_color_ffffff_80" />
             <solid android:color="@color/auto_color_f3f7fb_80" />
-            <corners android:topLeftRadius="@dimen/auto_dimen2_6" android:topRightRadius="@dimen/auto_dimen2_6" android:bottomLeftRadius="0.100000024dip" android:bottomRightRadius="0.100000024dip" />
+            <corners
+                android:topLeftRadius="@dimen/auto_dimen2_6"
+                android:topRightRadius="@dimen/auto_dimen2_6"
+                android:bottomLeftRadius="0.100000024dip"
+                android:bottomRightRadius="0.100000024dip" />
         </shape>
     </item>
 </layer-list>

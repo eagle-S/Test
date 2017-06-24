@@ -1,26 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/mapBottomInteractiveView" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:autoSkin="http://schemas.android.com/apk/res-auto">
-    <com.autonavi.framework.fragmentcontainer.MapInteractiveRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <LinearLayout android:orientation="vertical" android:id="@id/ll_first_info" android:background="@drawable/auto_bg_navi_panel_shadow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/auto_dimen2_18" android:layout_marginTop="@dimen/auto_dimen2_21">
-        <android.support.v4.view.ViewPager android:id="@id/car_browser_horizontal_pager" android:fadingEdge="none" android:layout_width="@dimen/auto_dimen2_350" android:layout_height="@dimen/auto_dimen2_155" />
+<RelativeLayout android:id="@id/mapBottomInteractiveView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autoSkin="http://schemas.android.com/apk/res-auto">
+
+    <com.autonavi.framework.fragmentcontainer.MapInteractiveRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_first_info"
+        android:background="@drawable/auto_bg_navi_panel_shadow"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_dimen2_18"
+        android:layout_marginTop="@dimen/auto_dimen2_21">
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/car_browser_horizontal_pager"
+            android:fadingEdge="none"
+            android:layout_width="@dimen/auto_dimen2_350"
+            android:layout_height="@dimen/auto_dimen2_155" />
     </LinearLayout>
-    <com.autonavi.common.view.statusbar.AutoViewMapStatusBar android:id="@id/auto_navi_status_bar_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_21" android:layout_marginRight="@dimen/auto_dimen2_21" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
-    <LinearLayout android:orientation="vertical" android:id="@id/ll_zoom" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_5" android:layout_marginRight="@dimen/auto_dimen2_28" android:layout_marginBottom="@dimen/auto_dimen2_28" android:weightSum="2.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
-        <com.autonavi.framework.widget.LaterImageButton android:id="@id/navigation_zoom_in" android:background="@drawable/auto_bg_zoom_out_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:scaleType="centerInside" android:layout_weight="1.0" android:contentDescription="@string/zoom_out" autoSkin:background4Skin="@drawable/auto_bg_zoom_out_selector" autoSkin:background4Night="@drawable/auto_bg_zoom_out_selector_night" />
-        <com.autonavi.framework.widget.LaterImageButton android:id="@id/navigation_zoom_out" android:background="@drawable/auto_bg_zoom_in_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:scaleType="centerInside" android:layout_weight="1.0" android:contentDescription="@string/zoom_in" autoSkin:background4Skin="@drawable/auto_bg_zoom_in_selector" autoSkin:background4Night="@drawable/auto_bg_zoom_in_selector_night" />
+
+    <com.autonavi.common.view.statusbar.AutoViewMapStatusBar
+        android:id="@id/auto_navi_status_bar_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_21"
+        android:layout_marginRight="@dimen/auto_dimen2_21"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_zoom"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_5"
+        android:layout_marginRight="@dimen/auto_dimen2_28"
+        android:layout_marginBottom="@dimen/auto_dimen2_28"
+        android:weightSum="2.0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <com.autonavi.framework.widget.LaterImageButton
+            android:id="@id/navigation_zoom_in"
+            android:background="@drawable/auto_bg_zoom_out_selector"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:scaleType="centerInside"
+            android:layout_weight="1.0"
+            android:contentDescription="@string/zoom_out"
+            autoSkin:background4Skin="@drawable/auto_bg_zoom_out_selector"
+            autoSkin:background4Night="@drawable/auto_bg_zoom_out_selector_night" />
+
+        <com.autonavi.framework.widget.LaterImageButton
+            android:id="@id/navigation_zoom_out"
+            android:background="@drawable/auto_bg_zoom_in_selector"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:scaleType="centerInside"
+            android:layout_weight="1.0"
+            android:contentDescription="@string/zoom_in"
+            autoSkin:background4Skin="@drawable/auto_bg_zoom_in_selector"
+            autoSkin:background4Night="@drawable/auto_bg_zoom_in_selector_night" />
     </LinearLayout>
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/keep_on_navigation_port" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/auto_dimen2_25" android:layout_marginBottom="@dimen/auto_dimen2_28" android:layout_alignParentBottom="true">
-        <com.autonavi.skin.view.SkinImageView android:layout_gravity="center_vertical" android:id="@id/exit_navi" android:background="@drawable/auto_bg_route_browser_exit_selector_day" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auto_ic_navi_exit" android:scaleType="centerInside" autoSkin:background4Skin="@drawable/auto_bg_route_browser_exit_selector_day" autoSkin:src4Skin="@drawable/auto_ic_navi_exit" autoSkin:background4Night="@drawable/auto_bg_route_browser_exit_selector_day_night" autoSkin:src4Night="@drawable/auto_ic_navi_exit_night" />
-        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/auto_dimen2_18" android:layout_alignParentBottom="true">
-            <com.autonavi.skin.view.SkinImageView android:id="@id/car_browser_left_btn" android:background="@drawable/auto_bg_navi_exit_selector_day" android:layout_width="@dimen/auto_dimen2_130" android:layout_height="wrap_content" android:src="@drawable/route_ic_browser_pre_normal" android:scaleType="centerInside" autoSkin:background4Skin="@drawable/auto_bg_navi_exit_selector_day" autoSkin:src4Skin="@drawable/route_ic_browser_pre_normal" autoSkin:background4Night="@drawable/auto_bg_navi_exit_selector_day_night" autoSkin:src4Night="@drawable/route_ic_browser_pre_normal_night" />
-            <com.autonavi.skin.view.SkinImageView android:id="@id/car_browser_right_btn" android:background="@drawable/auto_bg_navi_setting_selector_day" android:layout_width="@dimen/auto_dimen2_129" android:layout_height="wrap_content" android:src="@drawable/route_ic_browser_next_normal" android:scaleType="centerInside" autoSkin:background4Skin="@drawable/auto_bg_navi_setting_selector_day" autoSkin:src4Skin="@drawable/route_ic_browser_next_normal" autoSkin:background4Night="@drawable/auto_bg_navi_setting_selector_day_night" autoSkin:src4Night="@drawable/route_ic_browser_next_normal_night" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/keep_on_navigation_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_dimen2_25"
+        android:layout_marginBottom="@dimen/auto_dimen2_28"
+        android:layout_alignParentBottom="true">
+
+        <com.autonavi.skin.view.SkinImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/exit_navi"
+            android:background="@drawable/auto_bg_route_browser_exit_selector_day"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/auto_ic_navi_exit"
+            android:scaleType="centerInside"
+            autoSkin:background4Skin="@drawable/auto_bg_route_browser_exit_selector_day"
+            autoSkin:src4Skin="@drawable/auto_ic_navi_exit"
+            autoSkin:background4Night="@drawable/auto_bg_route_browser_exit_selector_day_night"
+            autoSkin:src4Night="@drawable/auto_ic_navi_exit_night" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_18"
+            android:layout_alignParentBottom="true">
+
+            <com.autonavi.skin.view.SkinImageView
+                android:id="@id/car_browser_left_btn"
+                android:background="@drawable/auto_bg_navi_exit_selector_day"
+                android:layout_width="@dimen/auto_dimen2_130"
+                android:layout_height="wrap_content"
+                android:src="@drawable/route_ic_browser_pre_normal"
+                android:scaleType="centerInside"
+                autoSkin:background4Skin="@drawable/auto_bg_navi_exit_selector_day"
+                autoSkin:src4Skin="@drawable/route_ic_browser_pre_normal"
+                autoSkin:background4Night="@drawable/auto_bg_navi_exit_selector_day_night"
+                autoSkin:src4Night="@drawable/route_ic_browser_pre_normal_night" />
+
+            <com.autonavi.skin.view.SkinImageView
+                android:id="@id/car_browser_right_btn"
+                android:background="@drawable/auto_bg_navi_setting_selector_day"
+                android:layout_width="@dimen/auto_dimen2_129"
+                android:layout_height="wrap_content"
+                android:src="@drawable/route_ic_browser_next_normal"
+                android:scaleType="centerInside"
+                autoSkin:background4Skin="@drawable/auto_bg_navi_setting_selector_day"
+                autoSkin:src4Skin="@drawable/route_ic_browser_next_normal"
+                autoSkin:background4Night="@drawable/auto_bg_navi_setting_selector_day_night"
+                autoSkin:src4Night="@drawable/route_ic_browser_next_normal_night" />
         </LinearLayout>
     </LinearLayout>
-    <com.autonavi.skin.view.SkinLinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/car_browser_navi_btn" android:background="@drawable/auto_bg_navi_keepon_selector_day" android:layout_width="@dimen/auto_dimen2_226" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/auto_dimen2_28" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
-        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auto_ic_navi" />
-        <TextView android:textSize="@dimen/auto_font_size_24" android:textColor="@color/auto_color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/auto_dimen2_12" android:text="@string/btn_navi" />
+
+    <com.autonavi.skin.view.SkinLinearLayout
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/car_browser_navi_btn"
+        android:background="@drawable/auto_bg_navi_keepon_selector_day"
+        android:layout_width="@dimen/auto_dimen2_226"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/auto_dimen2_28"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/auto_ic_navi" />
+
+        <TextView
+            android:textSize="@dimen/auto_font_size_24"
+            android:textColor="@color/auto_color_ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/auto_dimen2_12"
+            android:text="@string/btn_navi" />
     </com.autonavi.skin.view.SkinLinearLayout>
-    <com.autonavi.skin.view.SkinImageView android:id="@id/gd_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/auto_dimen2_28" android:src="@drawable/auto_ic_common_logo" android:layout_above="@id/keep_on_navigation_port" autoSkin:src4Skin="@drawable/auto_ic_common_logo" autoSkin:src4Night="@drawable/auto_ic_common_logo_night" />
-    <FrameLayout android:id="@id/navigation_scaling_ruler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/auto_dimen2_10" android:layout_above="@id/gd_logo" android:layout_alignLeft="@id/gd_logo" />
+
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@id/gd_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_dimen2_28"
+        android:src="@drawable/auto_ic_common_logo"
+        android:layout_above="@id/keep_on_navigation_port"
+        autoSkin:src4Skin="@drawable/auto_ic_common_logo"
+        autoSkin:src4Night="@drawable/auto_ic_common_logo_night" />
+
+    <FrameLayout
+        android:id="@id/navigation_scaling_ruler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/auto_dimen2_10"
+        android:layout_above="@id/gd_logo"
+        android:layout_alignLeft="@id/gd_logo" />
 </RelativeLayout>

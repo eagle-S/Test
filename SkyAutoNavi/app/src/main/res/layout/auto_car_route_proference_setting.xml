@@ -131,7 +131,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginBottom="@dimen/auto_dimen2_60"
                     android:divider="@null"
-                    android:listSelector="@color/transparent"/>
+                    android:listSelector="@color/transparent" />
             </LinearLayout>
         </LinearLayout>
 

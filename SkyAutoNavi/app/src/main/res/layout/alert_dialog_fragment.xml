@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="@dimen/auto_dimen2_488"
+        android:layout_height="wrap_content"
+        android:background="@drawable/auto_dialog_bg"
+        android:minHeight="@dimen/auto_dimen2_328"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/auto_dimen2_24"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/title_template"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22.0dip"
+                    android:layout_marginRight="22.0dip"
+                    android:layout_marginTop="24.0dip"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="6.0dip" />
+
+                    <TextView
+                        android:id="@+id/alertTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4.0dip"
+                        android:textColor="@color/auto_color_212125"
+                        android:textSize="@dimen/auto_font_size_30"
+                        tools:text="title"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contentPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="false"
+                    android:gravity="center"
+                    android:overScrollMode="ifContentScrolls">
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="22.0dip"
+                        android:layout_marginRight="22.0dip"
+                        android:gravity="center|top"
+                        android:lineSpacingExtra="4.0dip"
+                        android:textColor="@color/auto_color_586c7f"
+                        android:textSize="@dimen/auto_font_size_30"
+                        tools:text="message"/>
+                </ScrollView>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/customPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/custom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/messageDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/auto_dimen_1"
+            android:background="#ff383e4d"
+            android:gravity="fill_horizontal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="@dimen/auto_dimen2_300"
+            android:layout_height="@dimen/auto_dimen2_68"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/auto_dimen2_24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/leftSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/auto_dialog_left_btn_selector"
+                android:maxLines="2"
+                android:text="@string/cancel"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/auto_font_size_26"/>
+
+            <View
+                android:id="@+id/btDriver_left"
+                android:layout_width="@dimen/auto_dimen_4"
+                android:layout_height="@dimen/auto_dimen_4"
+                android:background="@drawable/alert_dialog_divider_point"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/auto_bg_btn_selector"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/auto_font_size_26"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/btDriver_right"
+                android:layout_width="@dimen/auto_dimen_4"
+                android:layout_height="@dimen/auto_dimen_4"
+                android:background="@drawable/alert_dialog_divider_point"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/auto_dialog_right_btn_selector"
+                android:maxLines="2"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/auto_font_size_26" />
+
+            <LinearLayout
+                android:id="@+id/rightSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/auto_bg_out_sytle_day"
@@ -38,7 +39,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/auto_dimen2_2"
                         android:singleLine="true"
-                        android:text="300"
+                        tools:text="300"
                         android:textColor="@color/auto_color_202025"
                         android:textSize="@dimen/auto_font_size_48" />
 
@@ -50,14 +51,14 @@
                         android:text="米后"
                         android:textColor="@color/auto_color_202025"
                         android:textSize="@dimen/auto_font_size_24"
-                        android:visibility="visible"/>
+                        android:visibility="visible" />
                 </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_next_road_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="厦门市思明区"
+                    tools:text="厦门市思明区"
                     android:textColor="@color/auto_color_202025"
                     android:textSize="@dimen/auto_font_size_24"
                     android:visibility="visible" />
@@ -90,7 +91,7 @@
                 android:background="@drawable/auto_bg_navi_exit_num"
                 android:paddingLeft="@dimen/auto_dimen2_5"
                 android:paddingRight="@dimen/auto_dimen2_5"
-                android:text="出口B"
+                tools:text="出口B"
                 android:textColor="@color/auto_color_white"
                 android:textSize="@dimen/auto_font_size_22" />
 
@@ -99,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:text="福州 泉州 泉州 泉州 泉州 泉州 泉州 泉州 泉州"
+                tools:text="福州 泉州 泉州 泉州 泉州 泉州 泉州 泉州 泉州"
                 android:textColor="@color/auto_color_202025"
                 android:textSize="@dimen/auto_font_size_24" />
         </LinearLayout>
@@ -132,7 +133,7 @@
             android:layout_marginTop="@dimen/auto_dimen2_1"
             android:gravity="right"
             android:singleLine="true"
-            android:text="5760公里"
+            tools:text="5760公里"
             android:textColor="@color/auto_color_202025"
             android:textSize="@dimen/auto_font_size_26" />
 
@@ -152,7 +153,7 @@
             android:layout_marginTop="@dimen/auto_dimen2_1"
             android:gravity="left"
             android:singleLine="true"
-            android:text="13小时20分钟"
+            tools:text="13小时20分钟"
             android:textColor="@color/auto_color_202025"
             android:textSize="@dimen/auto_font_size_26" />
     </LinearLayout>

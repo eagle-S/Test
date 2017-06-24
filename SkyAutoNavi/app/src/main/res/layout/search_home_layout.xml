@@ -12,7 +12,10 @@
         layout="@layout/search_home_title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/auto_search_common_title_height"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true">
+
+        <requestFocus />
+    </include>
 
     <include
         android:id="@+id/auto_dest_hot_layout"
@@ -21,7 +24,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_below="@id/auto_home_title_layout"
-        android:layout_margin="@dimen/auto_dest_hot_layout_padding" />
+        android:layout_margin="@dimen/auto_dest_hot_layout_padding"
+        android:focusable="true" />
 
     <ListView
         android:id="@+id/auto_destination_history"
@@ -29,9 +33,10 @@
         android:layout_height="match_parent"
         android:layout_below="@id/auto_home_title_layout"
         android:layout_toLeftOf="@id/auto_dest_hot_layout"
-        android:cacheColorHint="#00000000"
+        android:cacheColorHint="@android:color/transparent"
         android:divider="@null"
-        android:listSelector="#00000000"
+        android:focusable="true"
+        android:listSelector="@android:color/transparent"
         android:visibility="gone" />
 
     <include

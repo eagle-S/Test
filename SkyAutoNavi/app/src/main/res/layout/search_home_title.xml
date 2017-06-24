@@ -36,7 +36,8 @@
             android:singleLine="true"
             android:text="@string/auto_search_dest_title_edit_hint_text"
             android:textColor="@color/auto_color_9eaebd"
-            android:textSize="@dimen/auto_search_common_text_title_textsize" />
+            android:textSize="@dimen/auto_search_common_text_title_textsize"
+            android:focusable="true"/>
 
         <TextView
             android:id="@+id/btn_search"
@@ -44,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/auto_search_title_search_btn_margin_right"
-            android:visibility="gone"/>
+            android:visibility="gone" />
     </com.skyworthauto.navi.views.NaviLinearLayout>
 
     <View

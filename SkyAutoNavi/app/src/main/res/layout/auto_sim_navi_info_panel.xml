@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_first_info"
+        android:layout_width="@dimen/auto_dimen2_370"
+        android:layout_height="wrap_content"
+        android:background="@drawable/auto_bg_navi_panel_shadow"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/auto_sim_navi_info_distance"
+            layout="@layout/auto_navi_panel_naviinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_second_info"
+        android:layout_width="@dimen/auto_dimen2_370"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ViewStub
+            android:id="@+id/auto_navi_restinfo_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/auto_navi_restinfo"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal">
@@ -8,8 +9,8 @@
         android:id="@+id/auto_panel_content"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/auto_dimen2_24"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/auto_dimen2_24">
 
         <LinearLayout
             android:id="@+id/auto_panel_content_scheme_ll"
@@ -24,9 +25,9 @@
                 android:layout_weight="1.0"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@string/auto_route_scheme_tag"
                 android:textColor="@color/auto_text_color_route_panel_content_multi_selector"
-                android:textSize="@dimen/auto_font_size_20" />
+                android:textSize="@dimen/auto_font_size_20"
+                tools:text="@string/auto_route_scheme_tag" />
 
             <ImageView
                 android:id="@+id/auto_panel_content_arrow"
@@ -51,9 +52,9 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="1小时23分钟"
                 android:textColor="@color/auto_text_color_route_panel_time_multi_selector"
-                android:textSize="@dimen/auto_font_size_30" />
+                android:textSize="@dimen/auto_font_size_30"
+                tools:text="1小时23分钟" />
 
             <TextView
                 android:id="@+id/auto_panel_content_distance"
@@ -64,9 +65,9 @@
                 android:layout_marginLeft="@dimen/auto_dimen2_24"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="17.2公里"
                 android:textColor="@color/auto_text_color_route_panel_time_multi_selector"
-                android:textSize="@dimen/auto_font_size_20" />
+                android:textSize="@dimen/auto_font_size_20"
+                tools:text="17.2公里" />
         </LinearLayout>
 
         <include

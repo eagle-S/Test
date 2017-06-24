@@ -27,7 +27,7 @@
             android:layout_below="@id/section_name_icon"
             android:layout_centerHorizontal="true"
             android:background="@drawable/direction_result_line_new"
-            android:contentDescription="@null"/>
+            android:contentDescription="@null" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
             android:layout_marginRight="@dimen/auto_dimen_20"
             android:scaleType="center"
             android:src="@drawable/directions_more_down_black"
-            android:visibility="gone"/>
+            android:visibility="gone" />
     </RelativeLayout>
 
     <LinearLayout
@@ -123,5 +123,5 @@
         android:layout_gravity="bottom"
         android:layout_toRightOf="@id/left_frame"
         android:background="@color/auto_gray_bg_divider"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 </RelativeLayout>

@@ -890,7 +890,7 @@
     <item type="id" name="auto_setting_pause_music">false</item>
     <item type="id" name="auto_setting_pause_music_radio">false</item>
     <item type="id" name="auto_setting_navimode_tip">false</item>
-    <item type="id" name="auto_setting_navimode_detals_item">false</item>
+    <item type="id" name="auto_setting_navimode_detail_item">false</item>
     <item type="id" name="auto_setting_navimode_detals">false</item>
     <item type="id" name="auto_setting_navimode_detals_radio">false</item>
     <item type="id" name="auto_setting_navimode_simple_item">false</item>

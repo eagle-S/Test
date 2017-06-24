@@ -1204,8 +1204,10 @@
     <item type="dimen" name="around_search_title_search_margin_right">@dimen/auto_dimen_15</item>
     <item type="dimen" name="auto_basemap_global_padding">@dimen/auto_dimen2_28</item>
     <item type="dimen" name="auto_category_child_grid_item_height">@dimen/auto_dimen2_110</item>
-    <item type="dimen" name="auto_category_child_grid_item_only_text_height">@dimen/auto_dimen2_55</item>
-    <item type="dimen" name="auto_category_child_grid_item_text_margin_top">@dimen/auto_dimen2_7</item>
+    <item type="dimen" name="auto_category_child_grid_item_only_text_height">@dimen/auto_dimen2_55
+    </item>
+    <item type="dimen" name="auto_category_child_grid_item_text_margin_top">@dimen/auto_dimen2_7
+    </item>
     <item type="dimen" name="auto_category_grid_spacing">@dimen/auto_dimen2_12</item>
     <item type="dimen" name="auto_category_group_padding_bottom">@dimen/auto_dimen2_12</item>
     <item type="dimen" name="auto_category_group_padding_top">@dimen/auto_dimen2_24</item>
@@ -1284,15 +1286,25 @@
     <item type="dimen" name="auto_search_listview_right_btn_width">@dimen/auto_dimen2_105</item>
     <item type="dimen" name="auto_search_no_history_height">@dimen/auto_dimen2_192</item>
     <item type="dimen" name="auto_search_resut_navi_width_value">@dimen/auto_dimen_120</item>
-    <item type="dimen" name="auto_search_suggest_city_list_item_height">@dimen/auto_dimen2_100</item>
-    <item type="dimen" name="auto_search_suggest_city_list_item_num_textsize">@dimen/auto_font_size_24</item>
-    <item type="dimen" name="auto_search_suggest_city_list_item_padding">@dimen/auto_dimen2_24</item>
-    <item type="dimen" name="auto_search_suggest_city_list_item_textsize">@dimen/auto_font_size_30</item>
-    <item type="dimen" name="auto_search_switch_city_list_child_height">@dimen/auto_dimen2_100</item>
-    <item type="dimen" name="auto_search_switch_city_list_child_textsize">@dimen/auto_font_size_30</item>
+    <item type="dimen" name="auto_search_suggest_city_list_item_height">@dimen/auto_dimen2_100
+    </item>
+    <item type="dimen" name="auto_search_suggest_city_list_item_num_textsize">
+        @dimen/auto_font_size_24
+    </item>
+    <item type="dimen" name="auto_search_suggest_city_list_item_padding">@dimen/auto_dimen2_24
+    </item>
+    <item type="dimen" name="auto_search_suggest_city_list_item_textsize">@dimen/auto_font_size_30
+    </item>
+    <item type="dimen" name="auto_search_switch_city_list_child_height">@dimen/auto_dimen2_100
+    </item>
+    <item type="dimen" name="auto_search_switch_city_list_child_textsize">@dimen/auto_font_size_30
+    </item>
     <item type="dimen" name="auto_search_switch_city_list_group_height">@dimen/auto_dimen2_40</item>
-    <item type="dimen" name="auto_search_switch_city_list_group_height_large">@dimen/auto_dimen2_100</item>
-    <item type="dimen" name="auto_search_switch_city_list_group_textsize">@dimen/auto_font_size_30</item>
+    <item type="dimen" name="auto_search_switch_city_list_group_height_large">
+        @dimen/auto_dimen2_100
+    </item>
+    <item type="dimen" name="auto_search_switch_city_list_group_textsize">@dimen/auto_font_size_30
+    </item>
     <item type="dimen" name="auto_search_switch_city_list_margin">@dimen/auto_dimen2_24</item>
     <item type="dimen" name="auto_search_text_title_padding">@dimen/auto_dimen2_24</item>
     <item type="dimen" name="auto_search_title_search_btn_margin_right">@dimen/auto_dimen2_24</item>

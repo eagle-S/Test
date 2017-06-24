@@ -45,7 +45,7 @@
                 android:text="2"
                 android:textColor="@color/auto_color_route_waypoints_number"
                 android:textSize="@dimen/auto_dimen2_30"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/route_waypoints_number_third_tv"
@@ -71,7 +71,7 @@
         android:background="@drawable/auto_bg_along_search_btn_selector"
         android:scaleType="center"
         android:src="@drawable/route_ic_waypoints_clear"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <include
         layout="@layout/route_along_search_panel_layout"

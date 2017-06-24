@@ -39,7 +39,7 @@
             android:id="@+id/msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/progress_message"
+            tools:text="@string/progress_message"
             android:textColor="@color/auto_color_212125"
             android:textSize="@dimen/auto_font_size_28" />
 
