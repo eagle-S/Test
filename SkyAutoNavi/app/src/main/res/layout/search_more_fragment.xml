@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.focus.SearchMoreView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/auto_search_more_panel"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/transparent_color"
-    android:padding="@dimen/auto_search_global_padding">
+    android:background="@drawable/auto_bg_out_sytle_day"
+    android:layout_margin="@dimen/auto_search_global_padding">
 
     <RelativeLayout
+        android:id="@+id/search_more_title_panel"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/auto_bg_out_sytle_day">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/auto_search_more_title"
@@ -34,22 +34,34 @@
             android:layout_width="@dimen/auto_search_back_width"
             android:layout_height="@dimen/auto_search_common_title_height"
             android:layout_alignParentTop="true"
+            android:focusable="true"
             android:scaleType="center"
             android:src="@drawable/auto_ic_back_selector" />
-
-        <ListView
-            android:id="@+id/auto_search_more_listview"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@id/auto_search_title_bottom_divider"
-            android:layout_marginLeft="@dimen/auto_category_list_margin"
-            android:layout_marginRight="@dimen/auto_category_list_margin"
-            android:background="@android:color/transparent"
-            android:cacheColorHint="@android:color/transparent"
-            android:divider="@null"
-            android:focusable="false"
-            android:listSelector="@android:color/transparent"
-            android:paddingBottom="@dimen/auto_dimen_12" />
     </RelativeLayout>
-</LinearLayout>
+
+    <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+        android:id="@+id/auto_search_more_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/search_more_title_panel"
+        android:layout_marginLeft="@dimen/auto_category_list_margin"
+        android:layout_marginRight="@dimen/auto_category_list_margin"
+        android:paddingBottom="@dimen/auto_dimen_12" />
+
+    <!-- <com.skyworthauto.navi.fragment.SearchMoreListView
+         android:id="@+id/auto_search_more_listview"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_below="@id/auto_search_title_bottom_divider"
+         android:layout_marginLeft="@dimen/auto_category_list_margin"
+         android:layout_marginRight="@dimen/auto_category_list_margin"
+         android:background="@android:color/transparent"
+         android:cacheColorHint="@android:color/transparent"
+         android:divider="@null"
+         android:focusable="false"
+         android:listSelector="@android:color/transparent"
+         android:paddingBottom="@dimen/auto_dimen_12" />-->
+
+</com.skyworthauto.navi.ui.focus.SearchMoreView>

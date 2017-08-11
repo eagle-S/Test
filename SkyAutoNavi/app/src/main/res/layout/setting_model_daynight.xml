@@ -47,7 +47,8 @@
             android:id="@+id/auto_setting_auto_model_item"
             android:layout_width="@dimen/auto_dimen2_128"
             android:layout_height="fill_parent"
-            android:background="@drawable/auto_selector_bg_daynight_checkbox">
+            android:background="@drawable/auto_selector_bg_daynight_checkbox"
+            android:focusable="true">
 
             <TextView
                 android:id="@+id/auto_setting_auto_model"
@@ -79,7 +80,8 @@
             android:id="@+id/auto_setting_day_model_item"
             android:layout_width="@dimen/auto_dimen2_128"
             android:layout_height="fill_parent"
-            android:background="@drawable/auto_selector_bg_daynight_checkbox">
+            android:background="@drawable/auto_selector_bg_daynight_checkbox"
+            android:focusable="true">
 
             <TextView
                 android:id="@+id/auto_setting_day_model"
@@ -111,7 +113,8 @@
             android:id="@+id/auto_setting_night_model_item"
             android:layout_width="@dimen/auto_dimen2_128"
             android:layout_height="fill_parent"
-            android:background="@drawable/auto_selector_bg_daynight_checkbox">
+            android:background="@drawable/auto_selector_bg_daynight_checkbox"
+            android:focusable="true">
 
             <TextView
                 android:id="@+id/auto_setting_night_model"

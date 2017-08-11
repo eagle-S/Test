@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.views.SearchHomeView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.focus.MajorSearchView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/panel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,10 +12,7 @@
         layout="@layout/search_home_title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/auto_search_common_title_height"
-        android:layout_alignParentTop="true">
-
-        <requestFocus />
-    </include>
+        android:layout_alignParentTop="true" />
 
     <include
         android:id="@+id/auto_dest_hot_layout"
@@ -27,7 +24,8 @@
         android:layout_margin="@dimen/auto_dest_hot_layout_padding"
         android:focusable="true" />
 
-    <ListView
+
+    <com.skyworthauto.navi.ui.focus.FocusRecyclerView
         android:id="@+id/auto_destination_history"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,9 +33,9 @@
         android:layout_toLeftOf="@id/auto_dest_hot_layout"
         android:cacheColorHint="@android:color/transparent"
         android:divider="@null"
-        android:focusable="true"
-        android:listSelector="@android:color/transparent"
+        android:listSelector="@drawable/focused_state_bg"
         android:visibility="gone" />
+
 
     <include
         android:id="@+id/auto_destination_no_history"
@@ -48,4 +46,4 @@
         android:layout_toLeftOf="@id/auto_dest_hot_layout"
         android:paddingLeft="@dimen/auto_dest_no_history_padding" />
 
-</com.skyworthauto.navi.views.SearchHomeView>
+</com.skyworthauto.navi.ui.focus.MajorSearchView>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/auto_setting_reset_item"
+    android:id="@+id/auto_setting_reset_item"
     android:layout_width="fill_parent"
     android:layout_height="@dimen/auto_dimen2_150"
     android:background="@drawable/auto_item_bg_style1_selector"
@@ -38,7 +38,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@id/auto_setting_reset_btn"
+        android:id="@+id/auto_setting_reset_btn"
         android:layout_width="@dimen/auto_dimen2_180"
         android:layout_height="@dimen/auto_dimen2_60"
         android:layout_marginLeft="@dimen/auto_dimen2_24"
@@ -47,5 +47,6 @@
         android:gravity="center"
         android:text="立即恢复"
         android:textColor="@color/auto_color_white"
-        android:textSize="@dimen/auto_font_size_24" />
+        android:textSize="@dimen/auto_font_size_24"
+        android:focusable="true"/>
 </LinearLayout>

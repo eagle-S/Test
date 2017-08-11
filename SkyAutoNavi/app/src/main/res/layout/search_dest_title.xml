@@ -4,8 +4,6 @@
     android:layout_width="fill_parent"
     android:layout_height="@dimen/auto_search_common_title_height"
     android:layout_alignParentTop="true"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
     android:gravity="center_vertical"
     android:orientation="vertical">
 
@@ -44,7 +42,8 @@
             style="@style/auto_search_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/auto_search_title_search_btn_margin_right" />
+            android:layout_marginRight="@dimen/auto_search_title_search_btn_margin_right"
+            android:focusable="true"/>
     </LinearLayout>
 
     <View

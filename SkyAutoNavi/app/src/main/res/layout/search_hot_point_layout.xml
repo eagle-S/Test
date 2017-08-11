@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.views.NaviLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <com.skyworthauto.navi.views.NaviLinearLayout
+    <LinearLayout
         android:id="@+id/auto_dest_home_company_layout"
         android:layout_width="fill_parent"
         android:layout_height="0.0dip"
@@ -12,14 +12,14 @@
         android:background="@drawable/auto_dest_home_company_radius_bg"
         android:orientation="horizontal">
 
-        <com.skyworthauto.navi.views.NaviLinearLayout
+        <LinearLayout
             android:id="@+id/auto_dest_home"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:background="@drawable/auto_dest_hot_item_left_radius_selector"
-            android:focusable="true"
             android:clickable="true"
+            android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -42,7 +42,7 @@
                 android:text="@string/auto_dest_go_home"
                 android:textColor="@color/auto_dest_hot_item_textcolor"
                 android:textSize="@dimen/auto_dest_hot_textsize" />
-        </com.skyworthauto.navi.views.NaviLinearLayout>
+        </LinearLayout>
 
         <View
             android:layout_width="@dimen/auto_dimen2_1"
@@ -51,14 +51,14 @@
             android:layout_marginTop="@dimen/auto_dest_home_company_divider_margin"
             android:background="@color/auto_color_c0ccdc" />
 
-        <com.skyworthauto.navi.views.NaviLinearLayout
+        <LinearLayout
             android:id="@+id/auto_dest_company"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:background="@drawable/auto_dest_hot_item_no_radius_selector"
-            android:focusable="true"
             android:clickable="true"
+            android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -81,7 +81,7 @@
                 android:text="@string/auto_dest_go_company"
                 android:textColor="@color/auto_dest_hot_item_textcolor"
                 android:textSize="@dimen/auto_dest_hot_textsize" />
-        </com.skyworthauto.navi.views.NaviLinearLayout>
+        </LinearLayout>
 
         <View
             android:layout_width="@dimen/auto_dimen2_1"
@@ -90,7 +90,7 @@
             android:layout_marginTop="@dimen/auto_dest_home_company_divider_margin"
             android:background="@color/auto_color_c0ccdc" />
 
-        <com.skyworthauto.navi.views.NaviLinearLayout
+        <LinearLayout
             android:id="@+id/auto_dest_favor"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -120,14 +120,14 @@
                 android:text="@string/auto_dest_favorite"
                 android:textColor="@color/auto_dest_hot_item_textcolor"
                 android:textSize="@dimen/auto_dest_hot_textsize" />
-        </com.skyworthauto.navi.views.NaviLinearLayout>
-    </com.skyworthauto.navi.views.NaviLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
     <Space
         android:layout_width="fill_parent"
         android:layout_height="@dimen/auto_dest_around_space_height" />
 
-    <com.skyworthauto.navi.views.NaviLinearLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0.0dip"
         android:layout_weight="1.0"
@@ -138,8 +138,7 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0"
-            android:focusable="true"/>
+            android:layout_weight="1.0" />
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -150,8 +149,7 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0"
-            android:focusable="true"/>
+            android:layout_weight="1.0" />
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -162,15 +160,14 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0"
-            android:focusable="true"/>
-    </com.skyworthauto.navi.views.NaviLinearLayout>
+            android:layout_weight="1.0" />
+    </LinearLayout>
 
     <Space
         android:layout_width="fill_parent"
         android:layout_height="@dimen/auto_dest_around_space_height" />
 
-    <com.skyworthauto.navi.views.NaviLinearLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0.0dip"
         android:layout_weight="1.0"
@@ -181,8 +178,7 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0"
-            android:focusable="true"/>
+            android:layout_weight="1.0" />
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -193,8 +189,7 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0"
-            android:focusable="true"/>
+            android:layout_weight="1.0" />
 
         <Space
             android:layout_width="@dimen/auto_dest_around_space_height"
@@ -205,7 +200,6 @@
             layout="@layout/search_hot_point_item"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1.0"
-            android:focusable="true"/>
-    </com.skyworthauto.navi.views.NaviLinearLayout>
-</com.skyworthauto.navi.views.NaviLinearLayout>
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

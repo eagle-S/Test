@@ -5586,5 +5586,6 @@ ISBN978-7-89416-454-4
     <string name="zai_di_tu_shang_xuan_dian">在地图上选择一个点</string>
     <string name="zoom_in">放大图面</string>
     <string name="zoom_out">缩小图面</string>
+    <string name="conform_to_reset_default_setting">确认要恢复默认设置？</string>
 
 </resources>

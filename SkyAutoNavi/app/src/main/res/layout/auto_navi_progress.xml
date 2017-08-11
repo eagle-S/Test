@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.focus.NaviView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true" />-->
 
-        <ImageView
+       <!-- <ImageView
             android:id="@+id/gd_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,9 +29,9 @@
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="@dimen/navi_logo_margin_bottom"
             android:layout_marginLeft="@dimen/navi_logo_margin_left"
-            android:src="@drawable/auto_ic_common_logo" />
+            android:src="@drawable/auto_ic_common_logo" />-->
 
-        <FrameLayout
+        <!--<FrameLayout
             android:id="@+id/navigation_scaling_ruler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +39,7 @@
             android:layout_alignLeft="@id/gd_logo"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="@dimen/navi_scale_margin_bottom"
-            android:layout_marginLeft="@dimen/navi_scale_margin_left" />
+            android:layout_marginLeft="@dimen/navi_scale_margin_left" />-->
 
         <LinearLayout
             android:id="@+id/ll_exit_setting"
@@ -49,35 +50,15 @@
             android:layout_marginBottom="@dimen/navi_exit_margin_bottom"
             android:layout_marginLeft="@dimen/navi_exit_margin_left"
             android:orientation="horizontal"
+            android:layoutDirection="rtl"
             android:visibility="visible">
-
-            <LinearLayout
-                android:id="@+id/exit_navi"
-                android:layout_width="@dimen/auto_dimen2_203"
-                android:layout_height="wrap_content"
-                android:background="@drawable/auto_bg_navi_exit_selector_day"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/auto_ic_navi_exit" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/auto_dimen2_12"
-                    android:text="@string/auto_navi_tips_quit"
-                    android:textColor="@color/auto_color_202025"
-                    android:textSize="@dimen/auto_font_size_26" />
-            </LinearLayout>
 
             <RelativeLayout
                 android:id="@+id/setting_btn"
                 android:layout_width="@dimen/auto_dimen2_153"
                 android:layout_height="wrap_content"
                 android:background="@drawable/auto_bg_navi_setting_selector_day"
+                android:focusable="true"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -85,13 +66,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/auto_ic_navi_setting" />
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -99,7 +75,15 @@
                         android:layout_marginLeft="@dimen/auto_dimen2_12"
                         android:text="@string/auto_navi_tips_setting"
                         android:textColor="@color/auto_color_202025"
-                        android:textSize="@dimen/auto_font_size_26" />
+                        android:textSize="@dimen/auto_font_size_26"/>
+
+                    <ImageView
+                        android:id="@+id/ic_navi_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/auto_ic_navi_setting"/>
+
+
                 </LinearLayout>
 
                 <ImageView
@@ -111,6 +95,30 @@
                     android:src="@drawable/auto_ic_red_point"
                     android:visibility="gone" />
             </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/exit_navi"
+                android:layout_width="@dimen/auto_dimen2_203"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auto_bg_navi_exit_selector_day"
+                android:gravity="center"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/auto_dimen2_12"
+                    android:text="@string/auto_navi_tips_quit"
+                    android:textColor="@color/auto_color_202025"
+                    android:textSize="@dimen/auto_font_size_26" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/auto_ic_navi_exit" />
+            </LinearLayout>
         </LinearLayout>
 
         <include
@@ -132,6 +140,7 @@
             android:layout_marginRight="@dimen/navi_preview_margin_right"
             android:background="@drawable/auto_bg_map_btn_selector"
             android:clickable="true"
+            android:focusable="true"
             android:contentDescription="@string/autotest_autonavi_view_full_btn"
             android:scaleType="centerInside"
             android:src="@drawable/auto_ic_navi_preview" />
@@ -283,8 +292,9 @@
             android:layout_marginBottom="@dimen/auto_dimen2_21"
             android:background="@drawable/auto_bg_navi_keepon_selector_day"
             android:gravity="center"
+            android:focusable="true"
             android:orientation="horizontal"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -308,8 +318,9 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/auto_dimen2_19"
             android:background="@drawable/auto_bg_navi_current_roadname"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            tools:visibility="gone">
 
             <TextView
                 android:id="@+id/tv_current_roadname"
@@ -319,7 +330,7 @@
                 android:layout_marginRight="@dimen/auto_dimen2_24"
                 android:maxWidth="@dimen/auto_dimen2_216"
                 android:singleLine="true"
-                android:text="观日路"
+                tools:text="观日路"
                 android:textColor="@color/auto_color_202025"
                 android:textSize="@dimen/auto_font_size_28" />
 
@@ -427,4 +438,4 @@
          android:layout_height="fill_parent"
          android:layout="@layout/auto_navi_talk_panel"
          android:visibility="visible" />-->
-</RelativeLayout>
+</com.skyworthauto.navi.ui.focus.NaviView>

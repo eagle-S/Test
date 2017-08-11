@@ -12,10 +12,7 @@
         android:layout_marginTop="@dimen/auto_dimen2_12"
         android:background="@drawable/auto_selector_status_bar_top_bar"
         android:clickable="true"
-        android:focusable="true"
-        android:gravity="center_vertical"
-        android:nextFocusLeft="@id/ib_go_search"
-        android:nextFocusRight="@+id/ib_status_bar_home">
+        android:gravity="center_vertical">
 
         <Space
             android:id="@+id/v_interval_0"
@@ -24,7 +21,7 @@
             android:layout_centerVertical="true"
             android:background="@null" />
 
-        <com.skyworthauto.navi.views.WifiTip
+        <com.skyworthauto.navi.ui.views.WifiTip
             android:id="@+id/iv_tip_wifi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +30,7 @@
             android:src="@drawable/auto_ic_status_bar_wifi_4" />
 
 
-        <com.skyworthauto.navi.views.GpsTip
+        <com.skyworthauto.navi.ui.views.GpsTip
             android:id="@+id/iv_tip_gps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +47,7 @@
             android:layout_marginLeft="@dimen/auto_dimen2_18"
             android:src="@drawable/auto_ic_status_bar_volume" />
 
-        <com.skyworthauto.navi.views.ClockTip
+        <com.skyworthauto.navi.ui.views.ClockTip
             android:id="@+id/tv_current_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

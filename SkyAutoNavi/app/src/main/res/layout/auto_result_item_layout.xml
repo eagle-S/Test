@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/poi_item_layout_rl"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/focused_state_bg"
+    android:focusable="true"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/root_layout_parent"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/right_detail_image"
@@ -22,7 +25,7 @@
         <LinearLayout
             android:id="@+id/main_layout"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/right_detail_image"
             android:orientation="vertical"
             android:paddingBottom="@dimen/auto_dimen2_19"
@@ -37,9 +40,9 @@
                 android:ellipsize="end"
                 android:lineSpacingExtra="1.0dip"
                 android:maxLines="2"
-                android:text="吉野家吉野家吉野家吉野家吉野家吉野家吉野家"
                 android:textColor="@color/auto_color_item_name_normal"
-                android:textSize="@dimen/auto_font_size_30" />
+                android:textSize="@dimen/auto_font_size_30"
+                tools:text="吉野家吉野家吉野家吉野家吉野家吉野家吉野家" />
 
             <LinearLayout
                 android:id="@+id/addr_tag_layout"
@@ -57,9 +60,9 @@
                         android:id="@+id/distance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="100km"
                         android:textColor="@color/auto_color_item_addr_normal"
-                        android:textSize="@dimen/auto_font_size_24" />
+                        android:textSize="@dimen/auto_font_size_24"
+                        tools:text="100km" />
 
                     <TextView
                         android:id="@+id/tag_line"
@@ -79,10 +82,10 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="自助/火锅"
                         android:textColor="@color/auto_color_white"
                         android:textSize="@dimen/auto_font_size_24"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        tools:text="自助/火锅" />
 
                     <TextView
                         android:id="@+id/addr_line"
@@ -103,10 +106,10 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="地址"
                     android:textColor="@color/auto_color_item_addr_normal"
                     android:textSize="@dimen/auto_font_size_24"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    tools:text="地址" />
             </LinearLayout>
 
             <LinearLayout
@@ -122,10 +125,10 @@
                 android:layout_marginTop="@dimen/auto_dimen2_12"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="深度信息"
                 android:textColor="@color/auto_color_item_deepinfo"
                 android:textSize="@dimen/auto_font_size_24"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:text="深度信息" />
 
             <LinearLayout
                 android:id="@+id/park_info"
@@ -140,10 +143,10 @@
                 android:layout_marginTop="@dimen/auto_dimen2_12"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="价格"
                 android:textColor="@color/auto_color_white"
                 android:textSize="@dimen/auto_font_size_24"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:text="价格" />
 
             <LinearLayout
                 android:id="@+id/gas_info"

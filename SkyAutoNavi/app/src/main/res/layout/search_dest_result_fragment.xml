@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.focus.DestSelectView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/search_left_layout"
-        android:layout_width="250dip"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginBottom="@dimen/auto_dimen2_28"
+        android:layout_marginLeft="@dimen/auto_dimen2_18"
+        android:layout_marginTop="@dimen/auto_dimen2_21"
         android:clickable="true">
 
         <RelativeLayout
             android:id="@+id/shadow_panel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/auto_search_global_padding">
+            android:layout_width="@dimen/auto_dimen2_350"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/auto_dimen2_20"
+            android:background="@drawable/auto_bg_route_panel_shadow">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/auto_bg_out_sytle_day"
+                android:background="@drawable/auto_bg_corner_route_panel"
                 android:clickable="true"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/left_layout_title_panel"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/auto_dimen2_80"
-                    android:background="@drawable/auto_search_title_top_all_radius_bg"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
@@ -46,9 +50,9 @@
                         android:paddingLeft="@dimen/auto_dimen_15"
                         android:paddingRight="@dimen/auto_dimen_15"
                         android:singleLine="true"
-                        android:text="@string/auto_search_dest_title_edit_hint_text"
                         android:textColor="@color/auto_color_212125"
-                        android:textSize="@dimen/auto_font_size_30" />
+                        android:textSize="@dimen/auto_font_size_30"
+                        tools:text="@string/auto_search_dest_title_edit_hint_text" />
                 </LinearLayout>
 
                 <View
@@ -61,12 +65,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <com.skyworthauto.navi.fragment.DestResultListView
+                    <com.skyworthauto.navi.ui.focus.FocusRecyclerView
                         android:id="@+id/dest_listview"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:divider="@null"
-                        android:listSelector="@android:color/transparent" />
+                        android:listSelector="@drawable/focused_state_bg" />
 
                     <include
                         android:id="@+id/auto_poi_detail_root_view"
@@ -84,6 +88,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/auto_bg_btn_navi_selector"
+            android:focusable="true"
             android:gravity="center"
             android:paddingLeft="@dimen/auto_dimen2_38"
             android:paddingRight="@dimen/auto_dimen2_38">
@@ -126,18 +131,18 @@
         android:layout_toRightOf="@id/search_left_layout"
         android:visibility="gone" />
 
-    <com.skyworthauto.navi.views.ClockTip
+    <com.skyworthauto.navi.ui.views.ClockTip
         android:id="@+id/tv_current_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/auto_dimen2_18"
-        android:gravity="center"
         android:layout_marginTop="@dimen/auto_dimen2_12"
         android:background="@drawable/auto_selector_status_bar_top_bar"
+        android:gravity="center"
         android:textColor="@color/auto_color_586c7f"
         android:textSize="@dimen/auto_dimen2_26"
         android:textStyle="bold" />
 
     <include layout="@layout/map_interactive_view" />
-</RelativeLayout>
+</com.skyworthauto.navi.ui.focus.DestSelectView>

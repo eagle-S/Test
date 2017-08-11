@@ -40,5 +40,6 @@
         android:minHeight="@dimen/auto_dimen_60"
         android:text="@string/arrive_in_end_point"
         android:textColor="@color/auto_color_202025"
-        android:textSize="@dimen/auto_font_size_22" />
+        android:textSize="@dimen/auto_font_size_22"
+        android:focusable="true"/>
 </LinearLayout>

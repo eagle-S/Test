@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mapBottomInteractiveView"
+<com.skyworthauto.navi.ui.focus.RouteSelectView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal">
@@ -40,6 +40,7 @@
                 android:layout_width="@dimen/auto_dimen2_240"
                 android:layout_height="@dimen/auto_dimen2_68"
                 android:background="@drawable/auto_bg_btn_navi_selector"
+                android:focusable="true"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -60,6 +61,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/right_layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_toRightOf="@id/left_layout">
@@ -111,22 +113,24 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/auto_dimen2_142"
             android:layout_marginTop="@dimen/auto_dimen2_21" />
-
-        <include
-            android:id="@+id/route_detail_id"
-            layout="@layout/auto_car_route_detail"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/auto_dimen2_48"
-            android:layout_marginRight="@dimen/auto_dimen2_18"
-            android:layout_marginTop="@dimen/auto_dimen2_21"
-            android:visibility="gone" />
     </RelativeLayout>
+
+    <include
+        android:id="@+id/route_detail_id"
+        layout="@layout/auto_car_route_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/auto_dimen2_48"
+        android:layout_marginRight="@dimen/auto_dimen2_18"
+        android:layout_marginTop="@dimen/auto_dimen2_21"
+        android:layout_toRightOf="@id/left_layout"
+        android:visibility="gone" />
+
 
     <!--<ViewStub
         android:id="@+id/viewsub_route_traffic_panel"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout="@layout/route_car_result_traffic_event_detail_fragment" />-->
-</RelativeLayout>
+</com.skyworthauto.navi.ui.focus.RouteSelectView>

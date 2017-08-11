@@ -1,56 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.views.MapInteractiveView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.views.MapInteractiveView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/map_interactive_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <com.skyworthauto.navi.views.NaviLinearLayout
-        android:id="@+id/map_zoom_layout"
+    <ImageView
+        android:id="@+id/iv_auto_overview_tmc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/auto_dimen2_21"
-        android:layout_marginRight="@dimen/auto_dimen2_25"
-        android:layout_marginTop="@dimen/auto_dimen2_5"
-        android:orientation="vertical"
-        android:weightSum="2.0">
-
-        <ImageButton
-            android:id="@+id/map_zoom_in"
-            android:layout_width="wrap_content"
-            android:layout_height="0.0dip"
-            android:layout_weight="1.0"
-            android:background="@drawable/auto_bg_zoom_out_selector"
-            android:clickable="true"
-            android:nextFocusLeft="@id/fl_visual_mode_btn"
-            android:nextFocusRight="@+id/map_zoom_out"
-            android:scaleType="centerInside" />
-
-        <ImageButton
-            android:id="@+id/map_zoom_out"
-            android:layout_width="wrap_content"
-            android:layout_height="0.0dip"
-            android:layout_weight="1.0"
-            android:background="@drawable/auto_bg_zoom_in_selector"
-            android:clickable="true"
-            android:nextFocusLeft="@id/map_zoom_in"
-            android:nextFocusRight="@id/ib_go_search"
-            android:scaleType="centerInside" />
-    </com.skyworthauto.navi.views.NaviLinearLayout>
-
-    <FrameLayout
-        android:id="@+id/fl_visual_mode_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/map_zoom_layout"
+        android:layout_above="@+id/fl_visual_mode_btn"
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/auto_dimen2_21"
         android:background="@drawable/auto_bg_map_btn_selector"
         android:clickable="true"
         android:focusable="true"
-        android:nextFocusLeft="@+id/iv_auto_overview_tmc"
-        android:nextFocusRight="@id/map_zoom_in">
+        android:scaleType="centerInside"
+        android:src="@drawable/auto_ic_roads_open" />
+
+    <FrameLayout
+        android:id="@+id/fl_visual_mode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map_zoom_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/auto_dimen2_21"
+        android:background="@drawable/auto_bg_map_btn_selector"
+        android:clickable="true"
+        android:focusable="true">
 
         <ImageView
             android:id="@+id/ib_car_button"
@@ -69,20 +45,36 @@
             android:src="@drawable/auto_bg_2d_north" />
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/iv_auto_overview_tmc"
+    <LinearLayout
+        android:id="@+id/map_zoom_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/fl_visual_mode_btn"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/auto_dimen2_21"
-        android:background="@drawable/auto_bg_map_btn_selector"
-        android:clickable="true"
-        android:focusable="true"
-        android:nextFocusLeft="@id/ib_status_bar_home"
-        android:nextFocusRight="@id/fl_visual_mode_btn"
-        android:scaleType="centerInside"
-        android:src="@drawable/auto_ic_roads_open" />
+        android:layout_marginBottom="@dimen/auto_dimen2_21"
+        android:layout_marginRight="@dimen/auto_dimen2_25"
+        android:layout_marginTop="@dimen/auto_dimen2_5"
+        android:orientation="vertical"
+        android:weightSum="2.0">
+
+        <ImageButton
+            android:id="@+id/map_zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_bg_zoom_out_selector"
+            android:clickable="true"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/map_zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/auto_bg_zoom_in_selector"
+            android:clickable="true"
+            android:scaleType="centerInside" />
+    </LinearLayout>
 
     <!--    <ImageView
             android:id="@+id/auto_overview_refresh_id"
@@ -113,7 +105,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/auto_dimen2_28"
         android:layout_marginRight="@dimen/auto_dimen2_18"
-        android:layout_toLeftOf="@id/map_zoom_layout" />
+        android:layout_toLeftOf="@id/map_zoom_layout"
+        android:visibility="gone"/>
 
 
-</com.skyworthauto.navi.views.MapInteractiveView>
+</com.skyworthauto.navi.ui.views.MapInteractiveView>

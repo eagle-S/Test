@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.views.NaviLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/auto_dest_hot_item_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_weight="1.0"
     android:background="@drawable/auto_dest_hot_item_selector"
     android:clickable="true"
+    android:focusable="true"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -26,4 +27,4 @@
         android:singleLine="true"
         android:textColor="@color/auto_dest_hot_item_textcolor"
         android:textSize="@dimen/auto_dest_hot_textsize" />
-</com.skyworthauto.navi.views.NaviLinearLayout>
+</com.skyworthauto.navi.ui.focus.FocusLinearLayout>

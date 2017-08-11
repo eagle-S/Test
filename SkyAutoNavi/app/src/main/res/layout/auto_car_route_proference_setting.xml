@@ -1,150 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/content_body"
-    android:layout_width="fill_parent"
+<com.skyworthauto.navi.ui.focus.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/route_preference_panel"
+    android:layout_width="wrap_content"
     android:layout_height="fill_parent"
-    android:orientation="horizontal"
     android:paddingBottom="@dimen/auto_dimen2_28"
     android:paddingLeft="@dimen/auto_dimen2_18"
     android:paddingTop="@dimen/auto_dimen2_21">
 
-    <RelativeLayout
-        android:id="@+id/route_preference_panel"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/auto_dimen2_20"
+        android:background="@drawable/auto_bg_route_panel_shadow"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/auto_dimen2_350"
             android:layout_height="fill_parent"
-            android:layout_marginBottom="@dimen/auto_dimen2_20"
-            android:background="@drawable/auto_bg_route_panel_shadow"
+            android:background="@drawable/auto_bg_route_plane_setting"
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="@dimen/auto_dimen2_350"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_dimen2_80"
+                android:background="@drawable/auto_bg_preference_title_selector"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/auto_route_preference_back_btn"
+                    android:layout_width="@dimen/auto_dimen2_77"
+                    android:layout_height="fill_parent"
+                    android:focusable="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/auto_ic_back_selector" />
+
+                <View
+                    android:layout_width="@dimen/auto_dimen2_1"
+                    android:layout_height="@dimen/auto_dimen2_40"
+                    android:background="@color/auto_color_c0ccdc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/auto_dimen2_20"
+                    android:text="@string/auto_car_route_preferece"
+                    android:textColor="@color/auto_color_212125"
+                    android:textSize="@dimen/auto_font_size_26" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auto_panel_firstline"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/auto_dimen2_1"
+                android:background="@color/auto_color_c0ccdc_headview_drive_line" />
+
+            <!--<ScrollView
+                android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="@drawable/auto_bg_route_plane_setting"
-                android:orientation="vertical">
+                android:layout_marginBottom="@dimen/auto_dimen2_60"
+                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="@dimen/auto_dimen2_80"
-                    android:background="@drawable/auto_bg_preference_title_selector"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:id="@+id/auto_route_preference_back_btn"
-                        android:layout_width="@dimen/auto_dimen2_77"
-                        android:layout_height="fill_parent"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/auto_ic_back_selector" />
-
-                    <View
-                        android:layout_width="@dimen/auto_dimen2_1"
-                        android:layout_height="@dimen/auto_dimen2_40"
-                        android:background="@color/auto_color_c0ccdc" />
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/auto_dimen2_20"
-                        android:text="@string/auto_car_route_preferece"
-                        android:textColor="@color/auto_color_212125"
-                        android:textSize="@dimen/auto_font_size_26" />
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/auto_panel_firstline"
-                    android:layout_width="fill_parent"
-                    android:layout_height="@dimen/auto_dimen2_1"
-                    android:background="@color/auto_color_c0ccdc_headview_drive_line" />
-
-                <!--<ScrollView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_marginBottom="@dimen/auto_dimen2_60"
-                    android:scrollbars="none">
-
-                    <LinearLayout
+                        android:id="@+id/avoid_jam_id"
                         android:layout_width="fill_parent"
-                        android:layout_height="0.0dip"
-                        android:layout_weight="1.0"
-                        android:orientation="vertical">
+                        android:layout_height="@dimen/auto_dimen2_74"
+                        android:background="@drawable/auto_bg_route_preference_setting_item_selector"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/auto_dimen_22"
+                        android:paddingRight="@dimen/auto_dimen_20"
+                        android:text="@string/car_method_no_block"
+                        android:textColor="@color/auto_color_212125"
+                        android:textSize="@dimen/auto_font_size_24" />
 
-                        <TextView
-                            android:id="@+id/avoid_jam_id"
-                            android:layout_width="fill_parent"
-                            android:layout_height="@dimen/auto_dimen2_74"
-                            android:background="@drawable/auto_bg_route_preference_setting_item_selector"
-                            android:clickable="true"
-                            android:gravity="center_vertical"
-                            android:paddingLeft="@dimen/auto_dimen_22"
-                            android:paddingRight="@dimen/auto_dimen_20"
-                            android:text="@string/car_method_no_block"
-                            android:textColor="@color/auto_color_212125"
-                            android:textSize="@dimen/auto_font_size_24" />
+                    <TextView
+                        android:id="@+id/avoid_charge_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_74"
+                        android:background="@drawable/auto_bg_route_preference_setting_item_selector_2"
+                        android:clickable="true"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/auto_dimen_22"
+                        android:paddingRight="@dimen/auto_dimen_20"
+                        android:text="@string/car_method_no_fee"
+                        android:textColor="@color/auto_color_212125"
+                        android:textSize="@dimen/auto_font_size_24" />
 
-                        <TextView
-                            android:id="@+id/avoid_charge_id"
-                            android:layout_width="fill_parent"
-                            android:layout_height="@dimen/auto_dimen2_74"
-                            android:background="@drawable/auto_bg_route_preference_setting_item_selector_2"
-                            android:clickable="true"
-                            android:gravity="center|left"
-                            android:paddingLeft="@dimen/auto_dimen_22"
-                            android:paddingRight="@dimen/auto_dimen_20"
-                            android:text="@string/car_method_no_fee"
-                            android:textColor="@color/auto_color_212125"
-                            android:textSize="@dimen/auto_font_size_24" />
+                    <TextView
+                        android:id="@+id/avoid_highway_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_74"
+                        android:background="@drawable/auto_bg_route_preference_setting_item_selector"
+                        android:clickable="true"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/auto_dimen_22"
+                        android:paddingRight="@dimen/auto_dimen_20"
+                        android:text="@string/car_method_no_highway"
+                        android:textColor="@color/auto_color_212125"
+                        android:textSize="@dimen/auto_font_size_24" />
 
-                        <TextView
-                            android:id="@+id/avoid_highway_id"
-                            android:layout_width="fill_parent"
-                            android:layout_height="@dimen/auto_dimen2_74"
-                            android:background="@drawable/auto_bg_route_preference_setting_item_selector"
-                            android:clickable="true"
-                            android:gravity="center|left"
-                            android:paddingLeft="@dimen/auto_dimen_22"
-                            android:paddingRight="@dimen/auto_dimen_20"
-                            android:text="@string/car_method_no_highway"
-                            android:textColor="@color/auto_color_212125"
-                            android:textSize="@dimen/auto_font_size_24" />
+                    <TextView
+                        android:id="@+id/using_highway_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_74"
+                        android:background="@drawable/auto_bg_route_preference_setting_item_selector_2"
+                        android:clickable="true"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/auto_dimen_22"
+                        android:paddingRight="@dimen/auto_dimen_20"
+                        android:text="@string/car_method_using_highway"
+                        android:textColor="@color/auto_color_212125"
+                        android:textSize="@dimen/auto_font_size_24" />
 
-                        <TextView
-                            android:id="@+id/using_highway_id"
-                            android:layout_width="fill_parent"
-                            android:layout_height="@dimen/auto_dimen2_74"
-                            android:background="@drawable/auto_bg_route_preference_setting_item_selector_2"
-                            android:clickable="true"
-                            android:gravity="center|left"
-                            android:paddingLeft="@dimen/auto_dimen_22"
-                            android:paddingRight="@dimen/auto_dimen_20"
-                            android:text="@string/car_method_using_highway"
-                            android:textColor="@color/auto_color_212125"
-                            android:textSize="@dimen/auto_font_size_24" />
-
-                    </LinearLayout>
-                </ScrollView>-->
-                <ListView
-                    android:id="@+id/strategy_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/auto_dimen2_60"
-                    android:divider="@null"
-                    android:listSelector="@color/transparent" />
-            </LinearLayout>
+                </LinearLayout>
+            </ScrollView>-->
+            <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+                android:id="@+id/strategy_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/auto_dimen2_60"
+                android:divider="@null"
+                android:listSelector="@drawable/focused_state_bg" />
         </LinearLayout>
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/btn_update_route_plan_id"
-            android:layout_width="@dimen/auto_dimen2_240"
-            android:layout_height="@dimen/auto_dimen2_68"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/auto_bg_btn_navi_selector"
-            android:gravity="center"
-            android:text="@string/auto_update_route_plan"
-            android:textColor="@color/auto_white"
-            android:textSize="@dimen/auto_font_size_26" />
-    </RelativeLayout>
-</LinearLayout>
+    <TextView
+        android:id="@+id/btn_update_route_plan_id"
+        android:layout_width="@dimen/auto_dimen2_240"
+        android:layout_height="@dimen/auto_dimen2_68"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/auto_bg_btn_navi_selector"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/auto_update_route_plan"
+        android:textColor="@color/auto_white"
+        android:textSize="@dimen/auto_font_size_26" />
+</com.skyworthauto.navi.ui.focus.FocusRelativeLayout>

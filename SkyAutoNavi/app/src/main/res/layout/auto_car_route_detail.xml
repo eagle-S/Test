@@ -11,7 +11,7 @@
         android:background="@drawable/auto_bg_route_detail"
         android:orientation="horizontal">
 
-        <ListView
+        <!--<ListView
             android:id="@+id/car_detail_List"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
@@ -22,7 +22,15 @@
             android:fadingEdgeLength="0.0dip"
             android:listSelector="@android:color/transparent"
             android:padding="0.0dip"
-            android:scrollbars="none" />
+            android:scrollbars="none" />-->
+
+        <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+            android:id="@+id/car_detail_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/auto_category_list_margin"
+            android:layout_marginRight="@dimen/auto_category_list_margin" />
 
         <!--<com.autonavi.framework.widget.GeneralScrollBtnBar
             android:id="@+id/right_scrollbar"

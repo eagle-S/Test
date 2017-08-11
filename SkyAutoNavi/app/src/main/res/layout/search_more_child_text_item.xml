@@ -12,4 +12,5 @@
     android:minHeight="@dimen/auto_category_child_grid_item_only_text_height"
     android:singleLine="true"
     android:textColor="@color/auto_color_586c7f"
-    android:textSize="@dimen/auto_category_group_textsize" />
+    android:textSize="@dimen/auto_category_group_textsize"
+    android:focusable="true"/>

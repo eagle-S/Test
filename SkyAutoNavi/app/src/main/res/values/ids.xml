@@ -86,7 +86,7 @@
     <item type="id" name="round_progress_bar">false</item>
     <item type="id" name="speed_limit">false</item>
     <item type="id" name="content_body">false</item>
-    <item type="id" name="car_detail_List">false</item>
+    <item type="id" name="car_detail_list">false</item>
     <item type="id" name="right_scrollbar">false</item>
     <item type="id" name="car_detail_shadow_view">false</item>
     <item type="id" name="route_preference_panel">false</item>

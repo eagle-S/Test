@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.focus.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/auto_color_000000_30">
@@ -63,7 +63,16 @@
                         android:layout_width="fill_parent"
                         android:layout_height="@dimen/auto_dimen2_24" />
 
-                    <include layout="@layout/setting_content" />
+                    <include layout="@layout/setting_offline_map" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/auto_dimen2_1"
+                        android:layout_marginLeft="@dimen/auto_dimen2_24"
+                        android:background="@color/auto_color_dde5f0" />
+
+                    <include layout="@layout/setting_content"
+                        android:background="@drawable/auto_dest_hot_item_selector"/>
 
                     <View
                         android:layout_width="fill_parent"
@@ -107,4 +116,4 @@
             </ScrollView>
         </RelativeLayout>
     </LinearLayout>
-</LinearLayout>
+</com.skyworthauto.navi.ui.focus.FocusRelativeLayout>

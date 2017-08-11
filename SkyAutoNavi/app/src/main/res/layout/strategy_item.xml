@@ -2,8 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/auto_dimen2_74"
-    android:background="@drawable/auto_bg_route_preference_setting_item_selector"
+    android:background="@drawable/focused_state_bg"
     android:orientation="horizontal"
+    android:focusable="true"
     android:paddingLeft="@dimen/auto_dimen_22"
     android:paddingRight="@dimen/auto_dimen_20">
 

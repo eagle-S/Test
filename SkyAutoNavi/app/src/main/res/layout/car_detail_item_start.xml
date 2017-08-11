@@ -38,15 +38,16 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center_vertical"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/select_area"
-                android:layout_width="fill_parent"
-                android:layout_height="0.0dip"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1.0"
                 android:background="@drawable/auto_overview_item_bg"
                 android:clickable="false"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -64,23 +65,26 @@
                     android:textColor="@color/auto_color_202025"
                     android:textSize="@dimen/auto_font_size_24" />
 
-                <LinearLayout
-                    android:id="@+id/start_sim_navi"
-                    android:layout_width="@dimen/auto_dimen2_160"
-                    android:layout_height="@dimen/auto_dimen2_64"
-                    android:layout_marginRight="@dimen/auto_dimen2_10"
-                    android:gravity="center">
 
-                    <TextView
-                        android:layout_width="@dimen/auto_dimen2_130"
-                        android:layout_height="@dimen/auto_dimen2_44"
-                        android:layout_gravity="center"
-                        android:background="@drawable/auto_route_detail_start_sim_selector"
-                        android:gravity="center"
-                        android:text="@string/auto_route_start_sim_navi"
-                        android:textColor="@color/auto_color_5c84b9"
-                        android:textSize="@dimen/auto_font_size_22" />
-                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/auto_dimen2_160"
+                android:layout_height="@dimen/auto_dimen2_64"
+                android:layout_marginRight="@dimen/auto_dimen2_10"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/start_sim_navi"
+                    android:layout_width="@dimen/auto_dimen2_130"
+                    android:layout_height="@dimen/auto_dimen2_44"
+                    android:layout_gravity="center"
+                    android:background="@drawable/auto_route_detail_start_sim_selector"
+                    android:gravity="center"
+                    android:text="@string/auto_route_start_sim_navi"
+                    android:textColor="@color/auto_color_5c84b9"
+                    android:textSize="@dimen/auto_font_size_22"
+                    android:focusable="true"/>
             </LinearLayout>
 
             <View

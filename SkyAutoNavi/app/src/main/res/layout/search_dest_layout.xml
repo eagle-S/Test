@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/panel"
+<com.skyworthauto.navi.ui.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/transparent_color"
@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <include
-            android:id="@id/search_title"
+            android:id="@+id/search_title"
             layout="@layout/search_dest_title" />
 
         <LinearLayout
@@ -29,7 +29,7 @@
                 android:orientation="vertical">
 
                 <ViewStub
-                    android:id="@id/choose_position_layout"
+                    android:id="@+id/choose_position_layout"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/auto_dimen2_24"
@@ -37,7 +37,7 @@
                     android:background="@drawable/around_search_item_selector_without_background" />
 
                 <TextView
-                    android:id="@id/tv_nohistory"
+                    android:id="@+id/tv_nohistory"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/auto_dimen2_40"
@@ -46,15 +46,15 @@
                     android:textColor="@color/auto_color_586c7f"
                     android:textSize="@dimen/auto_dest_list_item_name_textsize" />
 
-                <ListView
-                    android:id="@id/lv_search_his"
+                <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+                    android:id="@+id/lv_search_his"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_marginBottom="5.0dip"
                     android:divider="@null"
-                    android:listSelector="@android:color/transparent" />
+                    android:listSelector="@drawable/focused_state_bg" />
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
-</LinearLayout>
+</com.skyworthauto.navi.ui.focus.FocusLinearLayout>

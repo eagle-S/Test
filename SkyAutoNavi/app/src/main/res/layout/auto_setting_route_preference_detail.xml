@@ -41,6 +41,7 @@
             android:layout_height="fill_parent"
             android:layout_marginRight="@dimen/auto_dimen2_12"
             android:layout_weight="1.0"
+            android:focusable="true"
             android:background="@drawable/auto_bg_checkbox_selector">
 
             <TextView
@@ -72,6 +73,7 @@
             android:layout_marginLeft="@dimen/auto_dimen2_12"
             android:layout_marginRight="@dimen/auto_dimen2_12"
             android:layout_weight="1.0"
+            android:focusable="true"
             android:background="@drawable/auto_bg_checkbox_selector">
 
             <TextView
@@ -103,6 +105,7 @@
             android:layout_marginLeft="@dimen/auto_dimen2_12"
             android:layout_marginRight="@dimen/auto_dimen2_12"
             android:layout_weight="1.0"
+            android:focusable="true"
             android:background="@drawable/auto_bg_checkbox_selector">
 
             <TextView
@@ -133,6 +136,7 @@
             android:layout_height="fill_parent"
             android:layout_marginLeft="@dimen/auto_dimen2_12"
             android:layout_weight="1.0"
+            android:focusable="true"
             android:background="@drawable/auto_bg_checkbox_selector">
 
             <TextView

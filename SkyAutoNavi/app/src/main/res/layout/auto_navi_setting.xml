@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.ui.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/setting_root_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_marginBottom="@dimen/auto_dimen2_28"
-    android:layout_marginLeft="@dimen/auto_dimen2_28"
-    android:layout_marginRight="@dimen/auto_dimen2_28"
-    android:layout_marginTop="@dimen/auto_dimen2_28"
+    android:layout_margin="@dimen/auto_search_global_padding"
     android:background="@drawable/auto_bg_out_sytle_day"
     android:orientation="horizontal"
     android:padding="@dimen/auto_dimen2_2">
@@ -29,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:focusable="true"
                 android:src="@drawable/auto_ic_back_selector" />
         </LinearLayout>
 
@@ -39,7 +37,7 @@
             android:layout_marginRight="@dimen/auto_dimen2_15"
             android:background="@color/auto_color_c0ccdc" />
 
-        <com.autonavi.framework.widget.GeneralScrollBtnBar
+        <View
             android:id="@+id/setting_scroll_bar"
             android:layout_width="@dimen/auto_dimen2_80"
             android:layout_height="fill_parent" />
@@ -68,13 +66,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include
+            <!--<include layout="@layout/setting_content" />-->
+            <com.skyworthauto.navi.ui.views.SettingView
+                android:id="@+id/setting_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.skyworthauto.navi.ui.views.SettingView>
+
+            <!--<include
                 layout="@layout/auto_ns_along_way_search_details"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/auto_dimen2_12" />
+                android:layout_marginTop="@dimen/auto_dimen2_12" />-->
 
-            <include
+            <!--<include
                 layout="@layout/auto_ns_navi_preference_detail"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
@@ -88,7 +94,7 @@
                 layout="@layout/auto_ns_traffic_overview_mode"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/auto_dimen2_24" />
+                android:layout_marginBottom="@dimen/auto_dimen2_24" />-->
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</com.skyworthauto.navi.ui.focus.FocusLinearLayout>

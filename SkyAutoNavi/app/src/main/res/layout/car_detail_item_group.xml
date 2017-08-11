@@ -51,6 +51,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/auto_dimen2_90"
         android:layout_toRightOf="@id/left_frame"
+        android:focusable="true"
         android:background="@drawable/auto_overview_item_bg">
 
         <LinearLayout

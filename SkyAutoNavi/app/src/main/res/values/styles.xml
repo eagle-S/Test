@@ -811,6 +811,8 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:background">@color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="custom_dlg_animation" parent="@android:style/Animation">
