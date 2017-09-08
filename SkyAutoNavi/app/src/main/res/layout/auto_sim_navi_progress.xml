@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.ui.focus.SimNaviView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.focus.SimNaviView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_container"
     android:layout_width="fill_parent"
@@ -252,4 +252,4 @@
             android:orientation="vertical"
             android:visibility="invisible" />
     </RelativeLayout>
-</com.skyworthauto.navi.ui.focus.SimNaviView>
+</com.skyworthauto.navi.focus.SimNaviView>

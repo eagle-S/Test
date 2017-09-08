@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.ui.focus.MainMapView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.focus.MainMapView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -21,8 +21,6 @@
         android:layout_centerVertical="true"
         android:background="@drawable/auto_map_go_slc"
         android:src="@drawable/auto_map_ic_go_content">
-
-        <requestFocus />
     </ImageButton>
 
     <include
@@ -50,4 +48,4 @@
         android:textSize="@dimen/auto_font_size_30"
         android:visibility="gone" />
 
-</com.skyworthauto.navi.ui.focus.MainMapView>
+</com.skyworthauto.navi.focus.MainMapView>

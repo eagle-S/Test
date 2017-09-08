@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.ui.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/panel"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -46,7 +46,7 @@
                     android:textColor="@color/auto_color_586c7f"
                     android:textSize="@dimen/auto_dest_list_item_name_textsize" />
 
-                <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+                <com.skyworthauto.navi.focus.FocusRecyclerView
                     android:id="@+id/lv_search_his"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
@@ -57,4 +57,4 @@
         </LinearLayout>
 
     </LinearLayout>
-</com.skyworthauto.navi.ui.focus.FocusLinearLayout>
+</com.skyworthauto.navi.focus.FocusLinearLayout>

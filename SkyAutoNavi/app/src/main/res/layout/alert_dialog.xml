@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.ui.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parentPanel"
     android:layout_width="fill_parent"
@@ -187,4 +187,4 @@
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
-</com.skyworthauto.navi.ui.focus.FocusLinearLayout>
+</com.skyworthauto.navi.focus.FocusLinearLayout>

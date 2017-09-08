@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.ui.focus.DestSelectView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.focus.DestSelectView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+                    <com.skyworthauto.navi.focus.FocusRecyclerView
                         android:id="@+id/dest_listview"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -131,7 +131,7 @@
         android:layout_toRightOf="@id/search_left_layout"
         android:visibility="gone" />
 
-    <com.skyworthauto.navi.ui.views.ClockTip
+    <com.skyworthauto.navi.view.ClockTip
         android:id="@+id/tv_current_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -145,4 +145,4 @@
         android:textStyle="bold" />
 
     <include layout="@layout/map_interactive_view" />
-</com.skyworthauto.navi.ui.focus.DestSelectView>
+</com.skyworthauto.navi.focus.DestSelectView>

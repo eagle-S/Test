@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.ui.focus.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.focus.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/auto_color_000000_30">
@@ -116,4 +116,4 @@
             </ScrollView>
         </RelativeLayout>
     </LinearLayout>
-</com.skyworthauto.navi.ui.focus.FocusRelativeLayout>
+</com.skyworthauto.navi.focus.FocusRelativeLayout>

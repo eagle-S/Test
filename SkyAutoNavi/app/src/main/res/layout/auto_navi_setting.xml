@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.skyworthauto.navi.ui.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.skyworthauto.navi.focus.FocusLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/setting_root_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -67,12 +67,12 @@
             android:orientation="vertical">
 
             <!--<include layout="@layout/setting_content" />-->
-            <com.skyworthauto.navi.ui.views.SettingView
+            <com.skyworthauto.navi.view.SettingView
                 android:id="@+id/setting_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            </com.skyworthauto.navi.ui.views.SettingView>
+            </com.skyworthauto.navi.view.SettingView>
 
             <!--<include
                 layout="@layout/auto_ns_along_way_search_details"
@@ -97,4 +97,4 @@
                 android:layout_marginBottom="@dimen/auto_dimen2_24" />-->
         </LinearLayout>
     </ScrollView>
-</com.skyworthauto.navi.ui.focus.FocusLinearLayout>
+</com.skyworthauto.navi.focus.FocusLinearLayout>

@@ -81,7 +81,7 @@
         android:layout_marginBottom="@dimen/auto_dimen2_38"
         android:layout_weight="1.0">
 
-        <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+        <com.skyworthauto.navi.focus.FocusRecyclerView
             android:id="@+id/dest_path_listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

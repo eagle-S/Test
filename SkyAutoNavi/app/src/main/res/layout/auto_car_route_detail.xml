@@ -24,7 +24,7 @@
             android:padding="0.0dip"
             android:scrollbars="none" />-->
 
-        <com.skyworthauto.navi.ui.focus.FocusRecyclerView
+        <com.skyworthauto.navi.focus.FocusRecyclerView
             android:id="@+id/car_detail_list"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
